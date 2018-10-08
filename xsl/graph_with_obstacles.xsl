@@ -4,8 +4,8 @@
     <xsl:output method="xml" indent="yes"/>
 
     <!-- Definer parametere for XML filer -->
-    <xsl:param name="graphFile" select="document('xml/graph.xml')"/>
-    <xsl:param name="obstaclesFiles" select="document('xml/surface.obstacles.xml')"/>
+    <xsl:param name="graphFile" select="document('../xml/graph.xml')"/>
+    <xsl:param name="obstaclesFiles" select="document('../xml/obstacles.xml')"/>
 
     <!-- Definer variabel for graf-->
     <xsl:variable name="vertices" select="$graphFile/vertices/vertex"/>
