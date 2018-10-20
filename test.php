@@ -7,6 +7,8 @@
  */
 $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
-$doc->load("xsl/graph_with_obstacles.xsl");
+
+$doc->load("xsl/vegmeldinge_med_vær.xsl");
+$xslt->registerPHPFunctions();
 $xslt->importStylesheet($doc);
 echo $resultat = $xslt->transformToXML($doc);
