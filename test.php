@@ -9,6 +9,5 @@ $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
 
 $doc->load("xsl/vegmeldinge_med_vær.xsl");
-$xslt->registerPHPFunctions();
 $xslt->importStylesheet($doc);
-echo $resultat = $xslt->transformToXML($doc);
+echo $xslt->transformToXML($doc);
