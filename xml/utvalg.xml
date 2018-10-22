@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <utvalg>
-    <fjellovergang navn="Aurlandsfjellet"/>
-    <fjellovergang navn="Hemsedalsfjellet"/>
-    <fjellovergang navn="Vikafjellet"/>
-    <fjellovergang navn="Hardangervidda"/>
-    <fjellovergang navn="Haukelifjell"/>
-    <fjellovergang navn="Filefjell"/>
+    <fjellovergang identifikasjon="Fv 243 Aurlandsfjellet (Kvammadal bom - Vardahaug bom)" fylke="Hordaland" kommune="Voss" stedsnavn="Aurland"/>
+    <fjellovergang identifikasjon="Rv 52 Hemsedalsfjellet (Borlaug - Storeskard bom)" fylke="Buskerud" kommune="Hemsedal" stedsnavn="Hemsedal"/>
+    <fjellovergang identifikasjon="Rv 13 Vikafjellet (Hola - Storehaugtunnelen)" fylke="Sogn_og_Fjordane" kommune="Vik" stedsnavn="Vikafjell"/>
+    <fjellovergang identifikasjon="Rv 7 Hardangervidda (Leiro bom - Haugastøl bom)" fylke="Telemark" kommune="Vinje" stedsnavn="Hardangervidda"/>
+    <fjellovergang identifikasjon="Ev 134 Haukelifjell (Liamyrane bom - Fjellstad bom)" fylke="Telemark" kommune="Vinje" stedsnavn="Haukelifjell"/>
+    <fjellovergang identifikasjon="Ev 16 Filefjell (Maristova bom - Tyinkrysset)" fylke="Sogn_og_Fjordane" kommune="L%C3%A6rdal" stedsnavn="Filefjell"/>
 </utvalg>
