@@ -8,6 +8,6 @@
 $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
 
-$doc->load("xsl/vegmeldinge_med_vær.xsl");
+$doc->load("xsl/vegmeldinger_med_vær.xsl");
 $xslt->importStylesheet($doc);
 echo $xslt->transformToXML($doc);

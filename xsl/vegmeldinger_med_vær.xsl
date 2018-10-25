@@ -39,6 +39,24 @@
                                 <kjøreforhold>
                                     <xsl:value-of select="ingress"/>
                                 </kjøreforhold>
+                                <beskrivelse>
+                                    <xsl:value-of select="freetext"/>
+                                </beskrivelse>
+                                <meldingsType>
+                                    <xsl:value-of select="messageType"/>
+                                </meldingsType>
+                                <hastverk>
+                                    <xsl:value-of select="urgency"/>
+                                </hastverk>
+                                <veinummer>
+                                    <xsl:value-of select="roadNumber"/>
+                                </veinummer>
+                                <gyldigFra>
+                                    <xsl:value-of select="validFrom"/>
+                                </gyldigFra>
+                                <gyldigTil>
+                                    <xsl:value-of select="validTo"/>
+                                </gyldigTil>
                             </xsl:if>
                         </xsl:for-each>
 
