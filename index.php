@@ -9,7 +9,7 @@
 
 // Laster inn doc og XSLT prosessor
 $xslDoc = new DOMDocument();
-$xslDoc->load("xsl/vegmeldinger_med_vær.xsl");
+$xslDoc->load("xsl/vegmeldinger_med_stedsdata.xsl");
 
 $xsltProcessor = new XSLTProcessor();
 $xsltProcessor->registerPHPFunctions();
