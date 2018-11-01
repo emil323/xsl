@@ -34,11 +34,9 @@ foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
             <li><?php echo $fjellovergang['navn']; ?></li>
             <li><?php echo $fjellovergang->kjøreforhold ?></li>
             <li><?php echo $fjellovergang->beskrivelse ?></li>
-            <li><?php echo $fjellovergang->meldingsType ?></li>
             <li><?php echo $fjellovergang->hastverk ?></li>
             <li><?php echo $fjellovergang->veinummer ?></li>
             <li><?php echo $fjellovergang->gyldigFra ?></li>
-            <li><?php echo $fjellovergang->gyldigTil ?></li>
             <li>
 
                 <ul>
