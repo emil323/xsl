@@ -50,18 +50,26 @@
                                 </gyldigFra>
                                 <!-- Opprett stedsdata objekt , og fyll ut fylke, kommune og stedsnavn
                                      Dette gjøres fordi YR-API'et krever det.-->
+                                <xsl:variable name="sted" select="$stedsdata/stedsnavn[1]"/>
+
+                                <xsl:variable name="fylke" select="$sted/fylkesnavn"/>
+                                <xsl:variable name="kommune" select="$sted/kommunenavn"/>
+                                <xsl:variable name="stedsnavn" select="$sted/stedsnavn"/>
+
                                 <stedsdata>
-                                    <xsl:variable name="sted" select="$stedsdata/stedsnavn[1]"/>
                                     <fylke>
-                                        <xsl:value-of select="$sted/fylkesnavn"/>
+                                        <xsl:value-of select="$fylke"/>
                                     </fylke>
                                     <kommune>
-                                        <xsl:value-of select="$sted/kommunenavn"/>
+                                        <xsl:value-of select="$kommune"/>
                                     </kommune>
                                     <stedsnavn>
-                                        <xsl:value-of select="$sted/stedsnavn"/>
+                                        <xsl:value-of select="$stedsnavn"/>
                                     </stedsnavn>
                                 </stedsdata>
+                                <yr-URL>
+                                    <xsl:value-of select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
+                                </yr-URL>
                             </fjellovergang>
                         </xsl:if>
                     </xsl:if>
