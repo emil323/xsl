@@ -1,6 +1,5 @@
 //const collection = document.querySelector('.collection');
 //collection.addEventListener('click', test);
-
 /*
 function test(e) {
        if (e.target.id === 'veinavn') {
@@ -92,19 +91,20 @@ function skrivVærmelding(vei_id,xml) {
         for(i = 0; i< timevarsel.length; i++) {
 
             //Værdata variabler
-            var fra = timevarsel[i].getAttribute("fra")
-            var til = timevarsel[i].getAttribute("til")
+            var fra = new Date(timevarsel[i].getAttribute("fra"))
+            var til = new Date(timevarsel[i].getAttribute("til"))
             var mm_nedbør = timevarsel[i].getElementsByTagName("nedbør")[0].getAttribute("mm")
             var temperatur = timevarsel[i].getElementsByTagName("temperatur")[0].getAttribute("celcius")
             var vind_mps = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("mps")
             var vind_styrke = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("styrke")
             var vind_retning = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("retning")
             var symbolURL = timevarsel[i].getElementsByTagName("symbol")[0].firstChild.nodeValue
+            var datoFormatering = {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'}
 
             //HTML
             var html = "<ul>" +
-                "<li>Fra: " + fra +"</li>" +
-                "<li>Til: " + til +"</li>" +
+                "<li>Fra: " + fra.toLocaleString("no-NO", datoFormatering) +"</li>" +
+                "<li>Til: " + til.toLocaleString("no-NO", datoFormatering) +"</li>" +
                 "<ul>" +
                 "<li>Nedbør: " + mm_nedbør +"mm</li>" +
                 "<li>Temperatur: " + temperatur +" celcius</li>" +
@@ -122,8 +122,6 @@ function skrivVærmelding(vei_id,xml) {
         }
     }
 }
-
-
 
 
 

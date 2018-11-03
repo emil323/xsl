@@ -1,5 +1,26 @@
+body {
+    font-family: Arial;
+}
 
+.fjelloverganger {
+}
+
+.vei-liste {
+}
 
 .vei {
     border: 0.1em dotted red;
+    margin: 20px;
+    background-color: white;
+
+}
+
+.fjellovergang {
+}
+
+.værKnapp {
+    padding: 15px 15px;
+    border: none;
+    background-color: darkgrey;
+    cursor: pointer;
 }
