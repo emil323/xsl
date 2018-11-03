@@ -67,14 +67,13 @@
                                         <xsl:value-of select="$stedsnavn"/>
                                     </stedsnavn>
                                 </stedsdata>
-                                <yr-URL>
+                                <yrURL>
                                     <xsl:value-of select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
-                                </yr-URL>
+                                </yrURL>
                             </fjellovergang>
                         </xsl:if>
                     </xsl:if>
                 </xsl:for-each>
-
 
             </xsl:for-each>
         </fjelloveranger>

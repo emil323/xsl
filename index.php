@@ -25,45 +25,30 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 include("header.html");
 ?>
 
+    <div class="collection">
+        <ul class="vei-liste">
+            <?php
+            foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
+                ?>
+                <li>
+                    <ul>
+                        <li class="vei-listeelement" id="veinavn"><?php echo $fjellovergang['navn']; ?></li>
+                        <li class="vei-listeelement"><?php echo $fjellovergang->veiforhold ?></li>
+                        <li class="vei-listeelement"><?php echo $fjellovergang->hastverk ?></li>
+                        <li class="vei-listeelement"><?php echo $fjellovergang->gyldigFra ?></li>
+                        <li class="vei-listeelement" id="yrLink"><?php echo $fjellovergang->yrURL ?></li>
+                        <li class="vei-listeelement" id="fylke"><?php echo $fjellovergang->stedsdata->fylke ?></li>
+                        <li class="vei-listeelement" id="kommune"><?php echo $fjellovergang->stedsdata->kommune ?></li>
+                        <li class="vei-listeelement" id="stedsnavn"><?php echo $fjellovergang->stedsdata->stedsnavn ?></li>
+                        <div id="example" />
+                    </ul>
+                </li>
 
-<?php
-foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
-    ?>
-    <div class="vei-element">
-        <ul>
-            <li><?php echo $fjellovergang['navn']; ?></li>
-            <li><?php echo $fjellovergang->kjøreforhold ?></li>
-            <li><?php echo $fjellovergang->beskrivelse ?></li>
-            <li><?php echo $fjellovergang->hastverk ?></li>
-            <li><?php echo $fjellovergang->veinummer ?></li>
-            <li><?php echo $fjellovergang->gyldigFra ?></li>
-            <li>
-
-                <ul>
-                    <?php
-                    foreach ($statusFjelloverganger->fjellovergang->værvarsel->timevarsel->time as $time) {
-                        ?>
-                        <li>Fra <?php echo $time['fra']; ?> til <?php echo $time['til']; ?></li>
-                        <li>Nedbør: <?php echo $time->nedbør; ?></li>
-                        <li>Temperatur: <?php echo $time->temperatur; ?></li>
-                        <li>
-                            <ul>
-                                <li>Mps: <?php echo $time->vind['mps']; ?></li>
-                                <li>Styrke: <?php echo $time->vind['styrke']; ?></li>
-                                <li>Retning: <?php echo $time->vind['retning']; ?></li>
-                                <li>Symbol: <img src="<?php echo $time->symbol; ?>"></li>
-                            </ul>
-                        </li>
-                        <?php
-                    }
-                    ?>
-                </ul>
-            </li>
+                <?php
+            }
+            ?>
         </ul>
-    </div> <?php
-}
-?>
-
+    </div>
 <?php
 // Inkluder footer
 include("footer.html");
