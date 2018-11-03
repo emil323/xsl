@@ -6,6 +6,8 @@
  * Time: 18:13
  */
 
+header('Content-Type: text/xml');
+
 $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
 

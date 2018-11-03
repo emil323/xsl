@@ -1,12 +1,15 @@
-const collection = document.querySelector('.collection');
-collection.addEventListener('click', test);
+//const collection = document.querySelector('.collection');
+//collection.addEventListener('click', test);
 
+/*
 function test(e) {
-    if (e.target.id === 'veinavn') {
+       if (e.target.id === 'veinavn') {
         console.log(e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML);
         let yrLink = e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
         displayResult(yrLink);
     }
+
+
 }
 
 // Fra https://www.w3schools.com/xml/xsl_client.asp
@@ -58,33 +61,68 @@ function displayResult(yrLink) {
     }
 }
 
-/*
+*/
 // Fra https://www.w3schools.com/xml/ajax_xmlfile.asp
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
+function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
+    console.log(vei_id, fylke, kommune, stedsnavn)
+
+    var xhttp = new XMLHttpRequest()
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            myFunction(this);
+            skrivVærmelding(vei_id,this)
         }
     };
-    xhttp.open("GET", "cd_catalog.xml", true);
+
+    var url = encodeURI("værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn)
+    console.log(url)
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
-function myFunction(xml) {
-    var i;
-    var xmlDoc = xml.responseXML;
-    var table="<tr><th>Title</th><th>Artist</th></tr>";
-    var x = xmlDoc.getElementsByTagName("CD");
-    for (i = 0; i <x.length; i++) {
-        table += "<tr><td>" +
-            x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-            "</td><td>" +
-            x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-            "</td></tr>";
+
+
+function skrivVærmelding(vei_id,xml) {
+    if (xml.readyState == 4 && xml.status == 200) {
+
+        console.log(xml.responseXML)
+        var xmlDoc = xml.responseXML
+
+        var vei_element = document.getElementById(vei_id)
+
+        var timevarsel = xmlDoc.getElementsByTagName("time")
+        for(i = 0; i< timevarsel.length; i++) {
+
+            //Værdata variabler
+            var fra = timevarsel[i].getAttribute("fra")
+            var til = timevarsel[i].getAttribute("til")
+            var mm_nedbør = timevarsel[i].getElementsByTagName("nedbør")[0].getAttribute("mm")
+            var temperatur = timevarsel[i].getElementsByTagName("temperatur")[0].getAttribute("celcius")
+            var vind_mps = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("mps")
+            var vind_styrke = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("styrke")
+            var vind_retning = timevarsel[i].getElementsByTagName("vind")[0].getAttribute("retning")
+            var symbolURL = timevarsel[i].getElementsByTagName("symbol")[0].firstChild.nodeValue
+
+            //HTML
+            var html = "<ul>" +
+                "<li>Fra: " + fra +"</li>" +
+                "<li>Til: " + til +"</li>" +
+                "<ul>" +
+                "<li>Nedbør: " + mm_nedbør +"mm</li>" +
+                "<li>Temperatur: " + temperatur +" celcius</li>" +
+                "<li>Vind: " + vind_mps +" meter i sekundet</li>" +
+                "<li>Vindstyrke: " + vind_styrke +"</li>" +
+                "<li>Vind retning: " + vind_retning +"</li>" +
+                "<li><img src='" + symbolURL +"'/></li>" +
+                "</ul>" +
+                "</ul>"
+
+            vei_element.insertAdjacentHTML('beforeend', html)
+
+
+            console.log(symbolURL)
+        }
     }
-    document.getElementById("demo").innerHTML = table;
 }
-*/
+
 
 
 
