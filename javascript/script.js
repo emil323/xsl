@@ -1,67 +1,6 @@
-//const collection = document.querySelector('.collection');
-//collection.addEventListener('click', test);
-/*
-function test(e) {
-       if (e.target.id === 'veinavn') {
-        console.log(e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML);
-        let yrLink = e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML;
-        displayResult(yrLink);
-    }
 
 
-}
 
-// Fra https://www.w3schools.com/xml/xsl_client.asp
-function loadXMLDoc(filename) {
-    if (window.ActiveXObject) {
-        xhttp = new ActiveXObject("Msxml2.XMLHTTP");
-    }
-    else {
-        xhttp = new XMLHttpRequest();
-    }
-    xhttp.open("GET", filename, false);
-    try {
-        xhttp.responseType = "msxml-document"
-    } catch (err) {
-    } // Helping IE11
-    xhttp.send("");
-    return xhttp.responseXML;
-}
-
-function displayResult(yrLink) {
-    console.log(yrLink);
-
-    //xml = loadXMLDoc("xml/cdcatalog.xml");
-    //xsl = loadXMLDoc("xsl/cdcatalog_client.xsl");
-    xml = loadXMLDoc("xml/varsel.xml");
-    xsl = loadXMLDoc("xsl/værdata2.xsl");
-// code for IE
-    if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
-        ex = xml.transformNode(xsl);
-        document.getElementById("example").innerHTML = ex;
-    }
-// code for Chrome, Firefox, Opera, etc.
-    else if (document.implementation && document.implementation.createDocument) {
-        xsltProcessor = new XSLTProcessor();
-        xsltProcessor.importStylesheet(xsl);
-
-        const fylke = document.getElementById('fylke').innerHTML;
-        const kommune = document.getElementById('kommune').innerHTML;
-        const stedsnavn = document.getElementById('stedsnavn').innerHTML;
-
-        console.log(fylke, kommune, stedsnavn);
-
-        xsltProcessor.setParameter(null, "fylke", fylke);
-        xsltProcessor.setParameter(null, "kommune", kommune);
-        xsltProcessor.setParameter(null, "stedsnavn", stedsnavn);
-
-        resultDocument = xsltProcessor.transformToFragment(xml, document);
-        document.getElementById("example").appendChild(resultDocument);
-    }
-}
-
-*/
-// Fra https://www.w3schools.com/xml/ajax_xmlfile.asp
 function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
     console.log(vei_id, fylke, kommune, stedsnavn)
 
@@ -72,7 +11,7 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
         }
     };
 
-    var url = encodeURI("værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn)
+    var url = "værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn
     console.log(url)
     xhttp.open("GET", url, true);
     xhttp.send();
