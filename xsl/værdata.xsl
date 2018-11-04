@@ -29,6 +29,18 @@
                             <xsl:value-of select="@to"/>
                         </xsl:attribute>
 
+                        <xsl:variable name="symbolURL"
+                                      select="concat('https://api.met.no/weatherapi/weathericon/1.1/?symbol=',symbol/@number,'&amp;content_type=image/png')"/>
+
+                        <!-- Legg til varsel -->
+                        <varsel>
+                            <xsl:attribute name="vær">
+                                <xsl:value-of select="symbol/@name"/>
+                            </xsl:attribute>
+                            <xsl:attribute name="symbol">
+                                <xsl:value-of select="$symbolURL" />
+                            </xsl:attribute>
+                        </varsel>
                         <!-- Legg til antall estimert mm nedbør-->
                         <nedbør>
                             <xsl:attribute name="mm">
@@ -54,11 +66,6 @@
                             </xsl:attribute>
                         </vind>
                         <!-- Legg til URL for symbol -->
-                        <xsl:variable name="symbolURL"
-                                      select="concat('https://api.met.no/weatherapi/weathericon/1.1/?symbol=',symbol/@number,'&amp;content_type=image/png')"/>
-                        <symbol>
-                            <xsl:value-of select="$symbolURL"/>
-                        </symbol>
                     </time>
 
                 </xsl:for-each>

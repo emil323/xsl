@@ -24,3 +24,17 @@ body {
     background-color: darkgrey;
     cursor: pointer;
 }
+
+.værTabell, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabellOverskrift {
+    font-size: large;
+}
+
+th {
+    font-size: small;
+    background-color: aqua;
+}
