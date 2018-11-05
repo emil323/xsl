@@ -1,5 +1,7 @@
 <xsl:stylesheet version="1.0" xml:lang="no" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:output method="xml" indent="yes"/>
+
     <xsl:param name="fylke"/>
     <xsl:param name="kommune"/>
     <xsl:param name="stedsnavn"/>
@@ -38,7 +40,7 @@
                                 <xsl:value-of select="symbol/@name"/>
                             </xsl:attribute>
                             <xsl:attribute name="symbol">
-                                <xsl:value-of select="$symbolURL" />
+                                <xsl:value-of select="$symbolURL"/>
                             </xsl:attribute>
                         </varsel>
                         <!-- Legg til antall estimert mm nedbør-->

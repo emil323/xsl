@@ -11,7 +11,7 @@ header('Content-Type: text/xml');
 $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
 
-$doc->load("xsl/værdata.xsl");
+$doc->load("../xsl/værdata.xsl");
 $xslt->importStylesheet($doc);
 
 //Sett parametere

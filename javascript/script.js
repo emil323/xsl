@@ -11,7 +11,7 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
         }
     };
 
-    var url = "værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn
+    var url = "php/værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn
     console.log(url)
     xhttp.open("GET", url, true);
     xhttp.send();
