@@ -25,7 +25,6 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 //Inkluder header
 include("html/header.html");
 ?>
-
     <div class="fjelloverganger">
         <ul class="vei-liste">
             <?php
@@ -40,21 +39,31 @@ include("html/header.html");
                 $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
 
                 ?>
-                <li id="<?php echo $vei_id ?>" class="vei"  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)">
+                <li id="<?php echo $vei_id ?>" class="vei"
+                    onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)">
                     <ul class="fjellovergang">
-                        <li class="vei-listeelement" class="veinavn"><h2><?php echo $fjellovergang['navn']; ?></h2></li>
-                        <li class="vei-listeelement"><small>Sist oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra));?></small></li>
-                        <li class="vei-listeelement"><strong>Kjøreforhold</strong>: <br><?php echo $fjellovergang->veiforhold ?></li>
-                        <li class="vei-listeelement"><strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?></li>
+
+                        <li class="vei-listeelement" id="veinavn"><h2><?php echo $fjellovergang['navn']; ?></h2></li>
+                        <div class="fjellovergang-innhold">
+                            <li class="vei-listeelement">
+                                <small>Sist
+                                    oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
+                            </li>
+                            <li class="vei-listeelement"><strong>Kjøreforhold</strong>:
+                                <br><?php echo $fjellovergang->veiforhold ?></li>
+                            <li class="vei-listeelement">
+                                <strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?>
+                            </li>
+                        </div>
                     </ul>
                 </li>
 
                 <?php
-               $teller++;
+                $teller++;
             }
             ?>
         </ul>
     </div>
-<?php
+<?php  ?><?php
 // Inkluder footer
 include("html/footer.html");

@@ -1,43 +1,87 @@
+html,body{
+    height: 100%;
+}
+
 body {
+    background-color: #dadada;
     font-family: Arial;
+    margin:0;
+    padding: 0;
+    color: #FFF;
+}
+nav {
+    background-color: #444f55;
+    color: #FFF;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 1em;
+
+}
+
+footer {
+    background-color: #444f55;
+    position: absolute;
+    width: 100%;
+
 }
 
 .fjelloverganger {
+    margin-top: 5em;
+}
+.footer-liste {
+    list-style-type: none;
 }
 
+.footer-listeelement {
+    display: inline-block;
+
+}
+
+.footer-img {
+    height: 50px;
+}
+
+
 .vei-liste {
+    list-style-type: none;
 }
 
 .vei {
-    border: 0.1em dotted red;
-    margin: 20px;
-    background-color: white;
+    margin: 10px;
+    background-color: #444f55;
 }
 
 .vei:hover {
-    border: 0.1em dotted orange;
-}
-
-.fjellovergang {
-}
-
-.værKnapp {
-    padding: 15px 15px;
-    border: none;
-    background-color: darkgrey;
     cursor: pointer;
 }
 
-.værTabell, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+#veinavn:hover {
+    color: #ed9300;
+}
+
+.fjellovergang {
+    list-style-type: none;
+    padding: 24px;
+}
+
+.værTabell {
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .tabellOverskrift {
-    font-size: large;
 }
 
-th {
+.tabellKategori {
     font-size: small;
-    background-color: aqua;
+    background-color: #008ec2;
+
 }
+
+.tabellData {
+
+}
+
+
+

@@ -1,5 +1,10 @@
+vedInnlasting();
 
-
+function vedInnlasting() {
+    document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
+        road.style.display = 'none';
+    });
+}
 
 function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
     console.log(vei_id, fylke, kommune, stedsnavn)
@@ -41,6 +46,16 @@ function skrivVærmelding(vei_id,xml) {
             elements[0].parentNode.removeChild(elements[0]);
         }
 
+        document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
+            if(road.parentElement.parentElement === vei_element) {
+                road.style.display = 'block';
+            } else {
+                road.style.display = 'none';
+            }
+        });
+
+
+
         var html = "<table class='værTabell'>";
 
         for(i = 0; i< timevarsel.length; i++) {
@@ -64,21 +79,22 @@ function skrivVærmelding(vei_id,xml) {
                     "<th class='tabellOverskrift' colspan='5'>" + fra.toLocaleString('no-NO', dag) + "</th>" +
                     "</th>" +
                     "<tr>" +
-                    "<th>Tid</th>" +
-                    "<th>Varsel</th>" +
-                    "<th>Temp.</th>" +
-                    "<th>Nedbør</th>" +
-                    "<th>Vind</th>" +
+                    "<th class='tabellKategori'>Tid</th>" +
+                    "<th class='tabellKategori' colspan='2'>Varsel</th>" +
+                    "<th class='tabellKategori'>Temp.</th>" +
+                    "<th class='tabellKategori'>Nedbør</th>" +
+                    "<th class='tabellKategori'>Vind</th>" +
                     "</tr>";
             }
 
             html+=
                 "<tr>" +
-                "<td>kl " + fra.toLocaleString('no-NO', tidspunkt) + "-" + til.toLocaleString('no-NO', tidspunkt) + "</td>" +
-                "<td class='varselElement'>" + varsel + "<img src='" + symbolURL +"'/></td>" +
-                "<td>" + temperatur + "°</td>" +
-                "<td>" + mm_nedbør +" mm</td>" +
-                "<td>" + vind_styrke + ", " + vind_mps + "m/s fra " + vind_retning +"</td>" +
+                "<td class='tabellData'>kl " + fra.toLocaleString('no-NO', tidspunkt) + "-" + til.toLocaleString('no-NO', tidspunkt) + "</td>" +
+                "<td class='varselElement' class='tabellData'><img src='" + symbolURL +"'/></td>" +
+                "<td class='tabellData'>" + varsel +"</td>" +
+                "<td class='tabellData'>" + temperatur + "°</td>" +
+                "<td class='tabellData'>" + mm_nedbør +" mm</td>" +
+                "<td class='tabellData'>" + vind_styrke + ", " + vind_mps + "m/s fra " + vind_retning +"</td>" +
                 "</tr>";
 
             forrigeDag = fra.getDay();
