@@ -12,7 +12,10 @@ body {
     border: 0.1em dotted red;
     margin: 20px;
     background-color: white;
+}
 
+.vei:hover {
+    border: 0.1em dotted orange;
 }
 
 .fjellovergang {

@@ -11,7 +11,7 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
         }
     };
 
-    var url = "php/værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn
+    var url = encodeURI("php/værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn)
     console.log(url)
     xhttp.open("GET", url, true);
     xhttp.send();
@@ -33,10 +33,13 @@ function skrivVærmelding(vei_id,xml) {
         var xmlDoc = xml.responseXML
 
         var vei_element = document.getElementById(vei_id)
-
         var timevarsel = xmlDoc.getElementsByTagName("time")
-
         let forrigeDag = "";
+
+        var elements = document.getElementsByClassName("værTabell");
+        while(elements.length > 0){
+            elements[0].parentNode.removeChild(elements[0]);
+        }
 
         var html = "<table class='værTabell'>";
 
@@ -54,20 +57,6 @@ function skrivVærmelding(vei_id,xml) {
 
             var dag = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
             var tidspunkt = {hour: 'numeric'}
-
-            //HTML
-            /*var html = "<ul>" +
-                "<li>Fra: " + fra.toLocaleString("no-NO", datoFormatering) +"</li>" +
-                "<li>Til: " + til.toLocaleString("no-NO", datoFormatering) +"</li>" +
-                "<ul>" +
-                "<li>Nedbør: " + mm_nedbør +"mm</li>" +
-                "<li>Temperatur: " + temperatur +" celcius</li>" +
-                "<li>Vind: " + vind_mps +" meter i sekundet</li>" +
-                "<li>Vindstyrke: " + vind_styrke +"</li>" +
-                "<li>Vind retning: " + vind_retning +"</li>" +
-                "<li><img src='" + symbolURL +"'/></li>" +
-                "</ul>" +
-                "</ul>" */
 
             if(fra.getDay() !== forrigeDag) {
                 html +=

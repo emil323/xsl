@@ -40,14 +40,12 @@ include("html/header.html");
                 $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
 
                 ?>
-                <li id="<?php echo $vei_id ?>" class="vei">
+                <li id="<?php echo $vei_id ?>" class="vei"  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)">
                     <ul class="fjellovergang">
                         <li class="vei-listeelement" class="veinavn"><h2><?php echo $fjellovergang['navn']; ?></h2></li>
                         <li class="vei-listeelement"><small>Sist oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra));?></small></li>
                         <li class="vei-listeelement"><strong>Kjøreforhold</strong>: <br><?php echo $fjellovergang->veiforhold ?></li>
                         <li class="vei-listeelement"><strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?></li>
-                        <div id="værdata" />
-                        <button class="værKnapp" type="button" onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)">Se værmelding</button>
                     </ul>
                 </li>
 
