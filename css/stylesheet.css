@@ -26,8 +26,16 @@ footer {
 
 }
 
+#søk {
+
+    margin:2em;
+    margin-top:3.5em;
+    padding:1em;
+    font-size: 1.5em;
+}
+
 .fjelloverganger {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 .footer-liste {
     list-style-type: none;

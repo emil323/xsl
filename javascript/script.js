@@ -136,6 +136,7 @@ function visLangtidsvarsel() {
 
 function skjulInfo() {
 
+
     var elements = document.getElementsByClassName("værTabell");
     while(elements.length > 0){
         elements[0].parentNode.removeChild(elements[0]);
@@ -143,6 +144,25 @@ function skjulInfo() {
     document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
             road.style.display = 'none';
     });
+}
+
+function søk(filter) {
+    skjulInfo()
+    værModus = {
+        xml : null,
+        veiID:-1,
+        visAlt:false
+    }
+    //var tekst = e.target.value.toUpperCase()
+    document.querySelectorAll('.vei').forEach(function (task) {
+        var vei = task.firstChild.parentNode.innerText;
+        if(vei.toUpperCase().indexOf(filter.toUpperCase()) != -1) {
+            task.style.display = "block";
+        } else {
+            task.style.display = 'none';
+        }
+    })
+
 }
 
 
