@@ -39,11 +39,10 @@ include("html/header.html");
                 $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
 
                 ?>
-                <li id="<?php echo $vei_id ?>" class="vei"
-                    onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)">
+                <li id="<?php echo $vei_id ?>" class="vei">
                     <ul class="fjellovergang">
 
-                        <li class="vei-listeelement" id="veinavn"><h2><?php echo $fjellovergang['navn']; ?></h2></li>
+                        <li class="vei-listeelement" id="veinavn"><h2  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2></li>
                         <div class="fjellovergang-innhold">
                             <li class="vei-listeelement">
                                 <small>Sist

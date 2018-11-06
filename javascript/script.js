@@ -1,12 +1,17 @@
 // test
 // ntest
 
+
+var værModus = {
+    xml : null,
+    veiID:-1,
+    visAlt:false
+}
+
 vedInnlasting();
 
 function vedInnlasting() {
-    document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
-        road.style.display = 'none';
-    });
+    skjulInfo()
 }
 
 function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
@@ -40,14 +45,20 @@ function skrivVærmelding(vei_id,xml) {
         console.log(xml.responseXML)
         var xmlDoc = xml.responseXML
 
+        if(værModus.veiID != vei_id) {
+            værModus.veiID = vei_id
+            værModus.visAlt = false
+            værModus.xml = xml
+        }
+
+
         var vei_element = document.getElementById(vei_id)
         var timevarsel = xmlDoc.getElementsByTagName("time")
         let forrigeDag = "";
 
-        var elements = document.getElementsByClassName("værTabell");
-        while(elements.length > 0){
-            elements[0].parentNode.removeChild(elements[0]);
-        }
+
+        skjulInfo()
+
 
         document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
             if(road.parentElement.parentElement === vei_element) {
@@ -56,7 +67,6 @@ function skrivVærmelding(vei_id,xml) {
                 road.style.display = 'none';
             }
         });
-
 
 
         var html = "<table class='værTabell'>";
@@ -100,12 +110,39 @@ function skrivVærmelding(vei_id,xml) {
                 "<td class='tabellData'>" + vind_styrke + ", " + vind_mps + "m/s fra " + vind_retning +"</td>" +
                 "</tr>";
 
-            forrigeDag = fra.getDay();
 
+
+            if(værModus.visAlt == false && i == 4) {
+                console.log("ikke vis alt")
+                html+= "<tr><td><button class='visLangtidsVarselKnapp' onclick='visLangtidsvarsel()'>Vis langtidsvarsel</button></td></tr>";
+                break;
+            }
+            forrigeDag = fra.getDay();
         }
+
+        html+= "<tr><td><button class='skjulKnapp' onclick='skjulInfo()'>Skjul</button></td></tr>";
+
         html += "</table>";
         vei_element.insertAdjacentHTML('beforeend', html)
     }
+
+}
+
+function visLangtidsvarsel() {
+    skjulInfo()
+    værModus.visAlt = true
+    skrivVærmelding(værModus.veiID, værModus.xml);
+}
+
+function skjulInfo() {
+
+    var elements = document.getElementsByClassName("værTabell");
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+    document.querySelectorAll('.fjellovergang-innhold').forEach(function (road) {
+            road.style.display = 'none';
+    });
 }
 
 
