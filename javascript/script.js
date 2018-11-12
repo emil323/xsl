@@ -1,7 +1,3 @@
-// test
-// ntest
-
-
 var værModus = {
     xml : null,
     veiID:-1,
@@ -29,15 +25,6 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
     xhttp.open("GET", url, true);
     xhttp.send();
 }
-
-/*
-for hver timevarsel
-    hent fra-dato
-    <table>
-        så lenge til-dato er samme dag
-            bygg tabell
-
- */
 
 function skrivVærmelding(vei_id,xml) {
     if (xml.readyState == 4 && xml.status == 200) {

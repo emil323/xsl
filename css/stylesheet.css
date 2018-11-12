@@ -19,15 +19,12 @@ nav {
 
 }
 
-footer {
-    background-color: #444f55;
-    position: absolute;
-    width: 100%;
-
+.nav-liste {
+    list-style-type: none;
+    text-align: center;
 }
 
 #søk {
-
     margin:2em;
     margin-top:3.5em;
     padding:1em;
@@ -37,13 +34,31 @@ footer {
 .fjelloverganger {
     margin-top: 3em;
 }
+
+
+footer {
+    background-color: #444f55;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+
+a {
+    color: #FFF;
+}
+
 .footer-liste {
     list-style-type: none;
+    display: inline-block;
+}
+
+.footer-delliste {
+    display: inline-block;
 }
 
 .footer-listeelement {
-    display: inline-block;
-
+    margin: 10px;
 }
 
 .footer-img {
@@ -121,5 +136,3 @@ footer {
     color:black;
     background-color: aliceblue;
 }
-
-
