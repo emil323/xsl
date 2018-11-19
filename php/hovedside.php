@@ -25,6 +25,9 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 //Inkluder header
 include("html/header.html");
 ?>
+
+    <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..." onkeyup="søk(this.value)"></div>
+
     <div class="fjelloverganger">
         <ul class="vei-liste">
             <?php

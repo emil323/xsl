@@ -9,14 +9,13 @@ body {
     padding: 0;
     color: #FFF;
 }
+
 nav {
     background-color: #444f55;
     color: #FFF;
     top: 0;
     width: 100%;
     position: absolute;
-    margin-bottom: 1em;
-
 }
 
 .nav-liste {
@@ -53,7 +52,7 @@ footer {
     position: absolute;
     width: 100%;
     text-align: center;
-
+    margin-top: 3em;
 }
 
 a {
@@ -147,4 +146,15 @@ a {
 .skjulKnapp:hover {
     color:black;
     background-color: aliceblue;
+}
+
+article {
+    padding: 10px;
+    margin: auto;
+    width: 700px;
+    background-color: #444f55;
+}
+
+#om {
+    margin-top: 7em;
 }
