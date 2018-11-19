@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/xmlmessage.css"?>
+
+
+
+	<searchresult>
+	    <result-array>
+  <result>
+    <heading>Ev 6 Dovrefjell (Dombås bom - Grønnbakken bom)</heading>
+    <messages>
+      <message>
+        <heading>Trøndelag fylke</heading>
+        <messagenumber>212925</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Trøndelag</string>
+        </actualCounties>
+      </message>
+      <message>
+        <heading>Dombås bom - Grønnbakken bom, på strekningen Dovrefjell</heading>
+        <messagenumber>211465</messagenumber>
+        <version>164</version>
+        <ingress>Bart, fare for glatte partier og tåke. Klokken 05:40 var det -11 grader, sør-vestlig flau vind og delvis skyet.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Ev</roadType>
+        <roadNumber>6</roadNumber>
+        <validFrom>2018-11-19 05:43:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+          <string>Trøndelag</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>9.138905</xCoord>
+            <yCoord>62.082362</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>9.585616</xCoord>
+            <yCoord>62.276441</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Ev 16 Filefjell (Maristova bom - Tyinkrysset)</heading>
+    <messages>
+      <message>
+        <heading>Filefjell</heading>
+        <messagenumber>211410</messagenumber>
+        <version>189</version>
+        <ingress>Bart og vått. Klokken 05:45 var det -5 grader, flau vind og klart oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Ev</roadType>
+        <roadNumber>16</roadNumber>
+        <validFrom>2018-11-19 05:47:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.016715</xCoord>
+            <yCoord>61.123203</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.23743</xCoord>
+            <yCoord>61.203987</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Ev 39 Ørskogfjellet (Sjøholt - Kjelbotnen)</heading>
+    <messages>
+      <message>
+        <heading>Møre og Romsdal fylke</heading>
+        <messagenumber>212923</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Ev 39 Fursetfjellet (Oppdøl - Batnfjordsøra)</heading>
+    <messages>
+      <message>
+        <heading>Møre og Romsdal fylke</heading>
+        <messagenumber>212923</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Ev 134 Haukelifjell (Liamyrane bom - Fjellstad bom)</heading>
+    <messages>
+      <message>
+        <heading>Haukelifjell</heading>
+        <messagenumber>211478</messagenumber>
+        <version>222</version>
+        <ingress>Bart og vått. Klokken 05:30 var det -1 grad, svak vind, delvis skyet og oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Ev</roadType>
+        <roadNumber>134</roadNumber>
+        <validFrom>2018-11-19 05:34:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Hordaland</string>
+          <string>Telemark</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>6.865717</xCoord>
+            <yCoord>59.838314</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.35973</xCoord>
+            <yCoord>59.76494</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 3 Kvikne (Tynset (Motrøa) - Ulsberg)</heading>
+    <messages>
+      <message>
+        <heading>Trøndelag fylke</heading>
+        <messagenumber>212925</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Trøndelag</string>
+        </actualCounties>
+      </message>
+      <message>
+        <heading>Kvikne</heading>
+        <messagenumber>211472</messagenumber>
+        <version>160</version>
+        <ingress>Stort sett bart og stedvis tynn is. Klokken 05:43 var det -6 grader, sørlig svak vind og klart.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>3</roadNumber>
+        <validFrom>2018-11-19 05:44:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Trøndelag</string>
+          <string>Hedmark</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>10.738339</xCoord>
+            <yCoord>62.28885</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>9.984202</xCoord>
+            <yCoord>62.751382</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 7 Hardangervidda (Leiro bom - Haugastøl bom)</heading>
+    <messages>
+      <message>
+        <heading>Hardangervidda</heading>
+        <messagenumber>211411</messagenumber>
+        <version>184</version>
+        <ingress>Stort sett bart og vått. Klokken 05:15 var det -10 grader, lett bris og oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>7</roadNumber>
+        <validFrom>2018-11-19 05:13:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Buskerud</string>
+          <string>Hordaland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.372096</xCoord>
+            <yCoord>60.401897</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.852591</xCoord>
+            <yCoord>60.512694</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 9 Hovden - Haukeli (Hovden bom - Vamark bom)</heading>
+    <messages>
+      <message>
+        <heading>Hovden - Haukeli</heading>
+        <messagenumber>213443</messagenumber>
+        <version>108</version>
+        <ingress>Bart.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>9</roadNumber>
+        <validFrom>2018-11-19 05:34:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Telemark</string>
+          <string>Aust-Agder</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.390893</xCoord>
+            <yCoord>59.580447</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.575579</xCoord>
+            <yCoord>59.712592</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 13 Vikafjellet (Hola - Storehaugtunnelen)</heading>
+    <messages>
+      <message>
+        <heading>Vikafjellet</heading>
+        <messagenumber>211412</messagenumber>
+        <version>157</version>
+        <ingress>Rim og fare for glatte partier. Klokken 05:45 var det -1 grad, stille og klart oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>13</roadNumber>
+        <validFrom>2018-11-19 05:49:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+          <string>Hordaland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>6.484408</xCoord>
+            <yCoord>60.901859</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>6.539328</xCoord>
+            <yCoord>61.00706</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 15 Strynefjellet (Ospeli - Billingen bom)</heading>
+    <messages>
+      <message>
+        <heading>Billingen bom - Ospeli, på strekningen Strynefjellet</heading>
+        <messagenumber>211466</messagenumber>
+        <version>166</version>
+        <ingress>Tynn is og fare for glatte partier. Klokken 05:20 var det -4 grader, sør-vestlig lett bris, skyet oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>15</roadNumber>
+        <validFrom>2018-11-19 05:26:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.825174</xCoord>
+            <yCoord>62.012575</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.264345</xCoord>
+            <yCoord>61.936964</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Rv 52 Hemsedalsfjellet (Borlaug - Storeskard bom)</heading>
+    <messages>
+      <message>
+        <heading>Hemsedalsfjellet</heading>
+        <messagenumber>211414</messagenumber>
+        <version>200</version>
+        <ingress>Bart og vått. Klokken 05:50 var det -5 grader, svak vind og klart oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>U</urgency>
+        <roadType>Rv</roadType>
+        <roadNumber>52</roadNumber>
+        <validFrom>2018-11-19 05:52:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+          <string>Buskerud</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.95553</xCoord>
+            <yCoord>61.07368</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.345702</xCoord>
+            <yCoord>60.880627</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 13 Gaularfjell (Bårddalselvi bom - Mjell bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 27 Venabygdsfjellet (Spidsbergseter bom - Gundstadseter bom)</heading>
+    <messages>
+      <message>
+        <heading>Spidsbergseter bom - Muen (Hedmark grense), på strekningen Venabygdsfjellet i Oppland</heading>
+        <messagenumber>211467</messagenumber>
+        <version>164</version>
+        <ingress>Bart og fare for glatte partier. Klokken 05:50 var det -8 grader nord-austlig flau vind og klart.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>27</roadNumber>
+        <validFrom>2018-11-19 05:53:39.659 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>10.116647</xCoord>
+            <yCoord>61.671349</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>10.172978</xCoord>
+            <yCoord>61.724349</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Muen (Oppland grense) - Gunstadseter bom, på strekningen Venabygdsfjellet i Hedmark</heading>
+        <messagenumber>213389</messagenumber>
+        <version>94</version>
+        <ingress>Bart og fare for glatte partier. Klokken 05:50 var det -8 grader nord-austlig flau vind og klart.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>27</roadNumber>
+        <validFrom>2018-11-19 05:53:39.659 CET</validFrom>
+        <actualCounties>
+          <string>Hedmark</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>10.173255</xCoord>
+            <yCoord>61.724619</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>10.211593</xCoord>
+            <yCoord>61.769382</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 37 Rauland - Møsvatn (Rauland høyfjellshotell bom - Skinnarbu bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 40 Dagalifjell (Torsetlia bom - Bjørkeflåta bom)</heading>
+    <messages>
+      <message>
+        <heading>Dagalifjell</heading>
+        <messagenumber>211479</messagenumber>
+        <version>163</version>
+        <ingress>Stort sett løs snø. Klokken 05:45 var det -6 grader, stille og delvis skyet.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>40</roadNumber>
+        <validFrom>2018-11-19 05:41:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Buskerud</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.501015</xCoord>
+            <yCoord>60.3309</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.471829</xCoord>
+            <yCoord>60.395441</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 45 Hunnedalsvegen (Øvstebøstølen - Svartevatn)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 45 Rotemo - Skafså (Rotemo bom - Skafså)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 50 Hol - Aurland (Myrland bom - Vassbygdi bom)</heading>
+    <messages>
+      <message>
+        <heading>Geiteryggtunnelen, på strekningen Hol - Aurland i Buskerud</heading>
+        <messagenumber>209410</messagenumber>
+        <version>3</version>
+        <ingress>Nedsatt hastighet til 50 km/t på grunn av vedlikeholdsarbeid i periodene: Mandag til fredag fra 07:00 til 22:00.</ingress>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>50</roadNumber>
+        <validFrom>2018-09-24 07:00:00.0 CEST</validFrom>
+        <validTo>2018-11-30 22:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Buskerud</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.636217</xCoord>
+            <yCoord>60.706101</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.58626</xCoord>
+            <yCoord>60.722468</yCoord>
+          </endPoint>
+        </coordinates>
+        <distributionPattern><period><from-date>2018-09-24T07:00:00.0 +0200</from-date><to-date>2018-11-30T22:00:00.0 +0100</to-date><from-time>07:00</from-time><to-time>22:00</to-time><days-of-week><day>mandag</day><day>tirsdag</day><day>onsdag</day><day>torsdag</day><day>fredag</day></days-of-week></period></distributionPattern>
+      </message>
+      <message>
+        <heading>Hol - Aurland i Buskerud</heading>
+        <messagenumber>211417</messagenumber>
+        <version>177</version>
+        <ingress>Bart og isdekke. Klokken 05:30 var det -2 grader, stille og oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>50</roadNumber>
+        <validFrom>2018-11-19 05:42:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Buskerud</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.988853</xCoord>
+            <yCoord>60.674644</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.580287</xCoord>
+            <yCoord>60.727612</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Hol - Aurland i Sogn og Fjordane</heading>
+        <messagenumber>211418</messagenumber>
+        <version>178</version>
+        <ingress>Bart og isdekke. Klokken 05:30 var det -2 grader, stille og oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>50</roadNumber>
+        <validFrom>2018-11-19 05:46:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.57989</xCoord>
+            <yCoord>60.728131</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.316013</xCoord>
+            <yCoord>60.869019</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Berdaltunnelen - Nesbøtunnelen, på strekningen Hol - Aurland i Sogn og Fjordane</heading>
+        <messagenumber>214982</messagenumber>
+        <version>3</version>
+        <ingress>Stengt på grunn av vedlikeholdsarbeid i periodene: Mandag til torsdag fra 20:00 til 06:00 (neste dag). Utrykningskjøretøy kan passere.</ingress>
+        <messageType>Midlertidig stengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>50</roadNumber>
+        <validFrom>2018-11-19 20:00:00.0 CET</validFrom>
+        <validTo>2018-11-23 06:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.391628</xCoord>
+            <yCoord>60.824036</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.454687</xCoord>
+            <yCoord>60.827007</yCoord>
+          </endPoint>
+        </coordinates>
+        <distributionPattern><period><from-date>2018-11-19T20:00:00.0 +0100</from-date><to-date>2018-11-23T06:00:00.0 +0100</to-date><from-time>20:00</from-time><to-time>06:00</to-time><days-of-week><day>mandag</day><day>tirsdag</day><day>onsdag</day><day>torsdag</day></days-of-week></period></distributionPattern>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 51 Valdresflye (Gardli bom - Maurvangen bom)</heading>
+    <messages>
+      <message>
+        <heading>Gardli bom - Maurvangen bom, på strekningen Valdresflye</heading>
+        <messagenumber>211469</messagenumber>
+        <version>193</version>
+        <ingress>Vekslende snø- og isdekke, fare for glatte partier. Klokken 05:30 var det -7 grader, nordlig flau vind og klart.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>51</roadNumber>
+        <validFrom>2018-11-19 05:38:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.866254</xCoord>
+            <yCoord>61.266632</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.838627</xCoord>
+            <yCoord>61.487318</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 53 Tyin - Årdal (Tyinkrysset - Øvre Årdal bom)</heading>
+    <messages>
+      <message>
+        <heading>Tyin - Årdal i Sogn og Fjordane</heading>
+        <messagenumber>211420</messagenumber>
+        <version>184</version>
+        <ingress>Vekslende bart og vått, fare for glatte partier. Klokken 05:48 var det -4 grader, laber bris, oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>53</roadNumber>
+        <validFrom>2018-11-19 05:49:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.14092</xCoord>
+            <yCoord>61.274391</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.836383</xCoord>
+            <yCoord>61.310962</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Tyin - Årdal i Oppland</heading>
+        <messagenumber>211419</messagenumber>
+        <version>177</version>
+        <ingress>Vekslende bart og vått, fare for glatte partier. Klokken 05:48 var det -4 grader, laber bris, oppholdsvær.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>53</roadNumber>
+        <validFrom>2018-11-19 05:48:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.234535</xCoord>
+            <yCoord>61.201601</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.141999</xCoord>
+            <yCoord>61.274279</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 55 Sognefjellet (Liasand bom - Turtagrø bom)</heading>
+    <messages>
+      <message>
+        <heading>Sognefjellet i Sogn og Fjordane</heading>
+        <messagenumber>213554</messagenumber>
+        <version>3</version>
+        <ingress>Nattestengt i periodene: Alle dager fra 20:00 til 08:00 (neste dag).</ingress>
+        <messageType>Nattestengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>55</roadNumber>
+        <validFrom>2018-11-12 20:00:00.0 CET</validFrom>
+        <validTo>2018-12-02 08:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.946815</xCoord>
+            <yCoord>61.556416</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.804303</xCoord>
+            <yCoord>61.504065</yCoord>
+          </endPoint>
+        </coordinates>
+        <distributionPattern><period><from-date>2018-11-12T20:00:00.0 +0100</from-date><to-date>2018-12-02T08:00:00.0 +0100</to-date><from-time>20:00</from-time><to-time>08:00</to-time><days-of-week><day>mandag</day><day>tirsdag</day><day>onsdag</day><day>torsdag</day><day>fredag</day><day>lørdag</day><day>søndag</day></days-of-week></period></distributionPattern>
+      </message>
+      <message>
+        <heading>Sognefjellet i Oppland</heading>
+        <messagenumber>214146</messagenumber>
+        <version>7</version>
+        <ingress>Nattestengt i periodene: Alle dager fra 20:00 til 08:00 (neste dag).</ingress>
+        <messageType>Nattestengt</messageType>
+        <urgency>U</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>55</roadNumber>
+        <validFrom>2018-11-12 20:00:00.0 CET</validFrom>
+        <validTo>2018-12-02 08:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.182404</xCoord>
+            <yCoord>61.663983</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.94849</xCoord>
+            <yCoord>61.556701</yCoord>
+          </endPoint>
+        </coordinates>
+        <distributionPattern><period><from-date>2018-11-12T20:00:00.0 +0100</from-date><to-date>2018-12-02T08:00:00.0 +0100</to-date><from-time>20:00</from-time><to-time>08:00</to-time><days-of-week><day>mandag</day><day>tirsdag</day><day>onsdag</day><day>torsdag</day><day>fredag</day><day>lørdag</day><day>søndag</day></days-of-week></period></distributionPattern>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 60 Utvikfjellet (Nuken bom - Karistova bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 60 Strandafjellet (Ringstad - Sykkylvsbrua)</heading>
+    <messages>
+      <message>
+        <heading>Møre og Romsdal fylke</heading>
+        <messagenumber>212923</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 63 Geiranger - Langvatn (Moldbakken bom - Langvatn bom)</heading>
+    <messages>
+      <message>
+        <heading>Møre og Romsdal fylke</heading>
+        <messagenumber>212923</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+      </message>
+      <message>
+        <heading>Geiranger - Langvatn i Oppland</heading>
+        <messagenumber>211620</messagenumber>
+        <version>63</version>
+        <ingress>Snø- og isdekke. Klokken 05:30 var det -4 grader og austlig laber bris.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>63</roadNumber>
+        <validFrom>2018-11-19 05:39:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.351983</xCoord>
+            <yCoord>62.017548</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.395044</xCoord>
+            <yCoord>62.014174</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Geiranger - Langvatn i Møre og Romsdal</heading>
+        <messagenumber>211015</messagenumber>
+        <version>75</version>
+        <ingress>Snø- og isdekke. Klokken 05:30 var det -4 grader og austlig laber bris.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>63</roadNumber>
+        <validFrom>2018-11-19 05:37:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.251976</xCoord>
+            <yCoord>62.073437</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.351453</xCoord>
+            <yCoord>62.017775</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 63 Trollstigen (Slettvikane bom - Trollstigen bom)</heading>
+    <messages>
+      <message>
+        <heading>Møre og Romsdal fylke</heading>
+        <messagenumber>212923</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+      </message>
+      <message>
+        <heading>Trollstigen</heading>
+        <messagenumber>211627</messagenumber>
+        <version>28</version>
+        <ingress>Bart. Klokken 06:00 var det 0 grader og sør-austlig svak vind.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>63</roadNumber>
+        <validFrom>2018-11-19 06:33:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Møre og Romsdal</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.640564</xCoord>
+            <yCoord>62.416879</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.675393</xCoord>
+            <yCoord>62.463357</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 92/381 Matre - Bjordalen (Fossen - Førde bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 124/755 Imingfjell (Tessungdalen - Imingfjell turistheim bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 204 Værskei - Lenningen (Værskei bom - Lenningen bom)</heading>
+    <messages>
+      <message>
+        <heading>Lenningen bom - Værskei bom, på strekningen Værskei - Lenningen</heading>
+        <messagenumber>211470</messagenumber>
+        <version>54</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>204</roadNumber>
+        <validFrom>2018-11-06 15:25:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>9.69844</xCoord>
+            <yCoord>61.112689</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>10.005536</xCoord>
+            <yCoord>61.177832</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 243 Aurlandsfjellet (Kvammadal bom - Vardahaug bom)</heading>
+    <messages>
+      <message>
+        <heading>Kvammadal bom - Vardahaug bom, på strekningen Aurlandsfjellet</heading>
+        <messagenumber>212659</messagenumber>
+        <version>1</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>243</roadNumber>
+        <validFrom>2018-10-12 19:47:00.0 CEST</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.270524</xCoord>
+            <yCoord>60.924642</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.318523</xCoord>
+            <yCoord>61.031414</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 252 Tyin - Eidsbugarden (Tyin bom - Eidsbugarden)</heading>
+    <messages>
+      <message>
+        <heading>Tyin - Eidsbugarden</heading>
+        <messagenumber>213561</messagenumber>
+        <version>1</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>252</roadNumber>
+        <validFrom>2018-10-23 12:00:00.0 CEST</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>8.234603</xCoord>
+            <yCoord>61.23078</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>8.299539</xCoord>
+            <yCoord>61.375353</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 258 Gamle Strynefjellsvegen (Ospeli - Heilstugosen bom)</heading>
+    <messages>
+      <message>
+        <heading>Gamle Strynefjellsvegen i Sogn og Fjordane</heading>
+        <messagenumber>210549</messagenumber>
+        <version>3</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>258</roadNumber>
+        <validFrom>2018-09-25 12:02:00.0 CEST</validFrom>
+        <actualCounties>
+          <string>Sogn og Fjordane</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.395285</xCoord>
+            <yCoord>61.964504</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.26435</xCoord>
+            <yCoord>61.936962</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Gamle Strynefjellsvegen i Oppland</heading>
+        <messagenumber>210548</messagenumber>
+        <version>4</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>258</roadNumber>
+        <validFrom>2018-09-25 12:01:00.0 CEST</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.629809</xCoord>
+            <yCoord>62.012863</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.396776</xCoord>
+            <yCoord>61.964952</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 287 Norefjell (Bergshammaren bom - Bruhaugan bom)</heading>
+    <messages>
+      <message>
+        <heading>Bruhaugan bom - Eggedal, på strekningen Åmot - Bromma</heading>
+        <messagenumber>212913</messagenumber>
+        <version>2</version>
+        <ingress>Stedvis nedsatt hastighet til 50 km/t, innsnevring og lysregulering på grunn av vedlikeholdsarbeid.</ingress>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>287</roadNumber>
+        <validFrom>2018-10-22 08:11:00.0 CEST</validFrom>
+        <validTo>2018-12-01 19:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Buskerud</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>9.204083</xCoord>
+            <yCoord>60.455249</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>9.315747</xCoord>
+            <yCoord>60.251144</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 337/987 Brokke - Suleskard (Koturdi bom - Suleskard)</heading>
+    <messages>
+      <message>
+        <heading>Brokke - Suleskard i Aust-Agder</heading>
+        <messagenumber>212929</messagenumber>
+        <version>3</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>337</roadNumber>
+        <validFrom>2018-11-01 12:01:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Aust-Agder</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.364702</xCoord>
+            <yCoord>59.052899</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>7.142455</xCoord>
+            <yCoord>59.042042</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+      <message>
+        <heading>Brokke - Suleskard i Vest-Agder</heading>
+        <messagenumber>212928</messagenumber>
+        <version>4</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>987</roadNumber>
+        <validFrom>2018-11-01 12:01:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Vest-Agder</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>7.142334</xCoord>
+            <yCoord>59.042024</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>6.938246</xCoord>
+            <yCoord>59.012276</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 385 Friisvegen (Øksendalen bom - Storfjellsætra bom)</heading>
+    <messages>
+      <message>
+        <heading>Friisvegen</heading>
+        <messagenumber>214008</messagenumber>
+        <version>4</version>
+        <ingress>Vinterstengt.</ingress>
+        <messageType>Vinterstengt</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>385</roadNumber>
+        <validFrom>2018-11-06 15:25:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Oppland</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>10.303806</xCoord>
+            <yCoord>61.55679</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>10.535958</xCoord>
+            <yCoord>61.671268</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+  <result>
+    <heading>Fv 500/986 Sirdal - Lysebotn (Brokke bom - Lysebotn fergekai)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 520 Hellandsbygd - Breiborg (Hellandsbygd bom - Breiborg bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 520 Breiborg - Røldal (Breiborg bom - Hordalia bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 651 Tuddal - Svineroi (Bittringsnatten bom - Svineroi bom)</heading>
+    <messages/>
+  </result>
+  <result>
+    <heading>Fv 705 Stuggudal - Brekken (Stuggudal bom - Brekken bom)</heading>
+    <messages>
+      <message>
+        <heading>Trøndelag fylke</heading>
+        <messagenumber>212925</messagenumber>
+        <version>1</version>
+        <ingress>Stedvis redusert framkommelighet på grunn av øvelse.</ingress>
+        <freetext>Militære kolonner, se twitter.com/VTSMidt eller vegvesen.no/trafikkinformasjon/reiseinformasjon/trident-juncture/</freetext>
+        <messageType>Redusert framkommelighet</messageType>
+        <urgency>N</urgency>
+        <roadNumber></roadNumber>
+        <validFrom>2018-10-16 00:00:00.0 CEST</validFrom>
+        <validTo>2018-12-01 00:00:00.0 CET</validTo>
+        <actualCounties>
+          <string>Trøndelag</string>
+        </actualCounties>
+      </message>
+      <message>
+        <heading>Stuggudal - Brekken</heading>
+        <messagenumber>210983</messagenumber>
+        <version>42</version>
+        <ingress>Vekslende bart og tynn is. Klokken 05:30 var det -4 grader og sør-vestlig svak vind.</ingress>
+        <messageType>Vær- og føreforhold</messageType>
+        <urgency>N</urgency>
+        <roadType>Fv</roadType>
+        <roadNumber>705</roadNumber>
+        <validFrom>2018-11-19 05:43:00.0 CET</validFrom>
+        <actualCounties>
+          <string>Trøndelag</string>
+        </actualCounties>
+        <coordinates>
+          <crs>EPSG:4326</crs>
+          <startPoint>
+            <xCoord>11.838831</xCoord>
+            <yCoord>62.88463</yCoord>
+          </startPoint>
+          <endPoint>
+            <xCoord>11.814102</xCoord>
+            <yCoord>62.830172</yCoord>
+          </endPoint>
+        </coordinates>
+      </message>
+    </messages>
+  </result>
+</result-array>
+	    
+    </searchresult>

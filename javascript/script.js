@@ -111,6 +111,11 @@ function skrivVærmelding(vei_id,xml) {
 
         html += "</table>";
         vei_element.insertAdjacentHTML('beforeend', html)
+    } else {
+        console.log("Kunne ikke laste værdata");
+        var html = "<p>Feil</p>";
+        var vei_element = document.getElementById(vei_id)
+        vei_element.insertAdjacentHTML('beforeend', html);
     }
 
 }

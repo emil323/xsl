@@ -7,7 +7,13 @@
 
 
     <!-- Legger vegmeldinger-fila i en variabel -->
-    <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/>
+
+    <!-- Henter en oppdatert XML-fil fra Vegvesen.no -->
+    <!-- <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/> -->
+
+    <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert -->
+    <xsl:param name="vegmeldingerFil" select="document('../xml/veidata.xml')"/>
+
     <!-- Lager et variabel for result-array -->
     <xsl:variable name="vegmeldinger" select="$vegmeldingerFil/searchresult/result-array/result"/>
 
@@ -68,7 +74,8 @@
                                     </stedsnavn>
                                 </stedsdata>
                                 <yrURL>
-                                    <xsl:value-of select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
+                                    <xsl:value-of
+                                            select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
                                 </yrURL>
                             </fjellovergang>
                         </xsl:if>
