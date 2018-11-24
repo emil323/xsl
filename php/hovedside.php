@@ -26,53 +26,56 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 include("html/header.html");
 ?>
 
-    <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..." onkeyup="søk(this.value)">
-    </div>
+    <article id="forsideInnhold">
+        <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..."
+                                 onkeyup="søk(this.value)">
+        </div>
 
-    <div class="fjelloverganger">
-        <ul class="vei-liste">
-            <?php
+        <div class="fjelloverganger">
+            <ul class="vei-liste">
+                <?php
 
-            $teller = 0;
-            foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
+                $teller = 0;
+                foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
 
-                $vei_id = "vei-" . $teller;
+                    $vei_id = "vei-" . $teller;
 
-                $fylke = $fjellovergang->stedsdata->fylke;
-                $kommune = $fjellovergang->stedsdata->kommune;
-                $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
+                    $fylke = $fjellovergang->stedsdata->fylke;
+                    $kommune = $fjellovergang->stedsdata->kommune;
+                    $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
 
-                ?>
-                <li id="<?php echo $vei_id ?>" class="vei">
-                    <ul class="fjellovergang">
+                    ?>
+                    <li id="<?php echo $vei_id ?>" class="vei">
+                        <ul class="fjellovergang">
 
-                        <li class="vei-listeelement" id="veinavn"><h2
-                                    onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2>
-                        </li>
-                        <div class="fjellovergang-innhold">
-
-                            <li class="vei-listeelement"><h3>Kjøreforhold:</h3></li>
-                            <li><?php echo $fjellovergang->veiforhold ?></li>
-                            <li class="vei-listeelement">
-                                <small>Sist
-                                    oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
+                            <li class="vei-listeelement" id="veinavn"><h2
+                                        onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2>
                             </li>
+                            <div class="fjellovergang-innhold">
+                                <li class="vei-listeelement">
+                                    <small>Sist
+                                        oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
+                                </li>
+                                <li class="vei-listeelement"><h3>Kjøreforhold:</h3></li>
+                                <li><?php echo $fjellovergang->veiforhold ?></li>
 
-                            <!--
+
+                                <!--
                             <li class="vei-listeelement">
                                 <strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?>
                             </li>
                             -->
-                        </div>
-                    </ul>
-                </li>
+                            </div>
+                        </ul>
+                    </li>
 
-                <?php
-                $teller++;
-            }
-            ?>
-        </ul>
-    </div>
+                    <?php
+                    $teller++;
+                }
+                ?>
+            </ul>
+        </div>
+    </article id="forside">
 <?php ?><?php
 // Inkluder footer
 include("html/footer.html");

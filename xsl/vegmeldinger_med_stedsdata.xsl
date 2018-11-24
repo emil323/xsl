@@ -9,10 +9,10 @@
     <!-- Legger vegmeldinger-fila i en variabel -->
 
     <!-- Henter en oppdatert XML-fil fra Vegvesen.no -->
-    <!-- <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/> -->
+    <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/>
 
     <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert -->
-    <xsl:param name="vegmeldingerFil" select="document('../xml/veidata.xml')"/>
+    <!-- <xsl:param name="vegmeldingerFil" select="document('../xml/veidata.xml')"/> -->
 
     <!-- Lager et variabel for result-array -->
     <xsl:variable name="vegmeldinger" select="$vegmeldingerFil/searchresult/result-array/result"/>

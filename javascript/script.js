@@ -76,8 +76,7 @@ function skrivVærmelding(vei_id,xml) {
             if(fra.getDay() !== forrigeDag) {
                 html +=
                     "<tr>" +
-                    "<th class='tabellOverskrift' colspan='5'>" + fra.toLocaleString('no-NO', dag) + "</th>" +
-                    "</th>" +
+                    "<th class='tabellOverskrift'>" + fra.toLocaleString('no-NO', dag) + "</th>" +
                     "<tr>" +
                     "<th class='tabellKategori'>Tid</th>" +
                     "<th class='tabellKategori' colspan='2'>Varsel</th>" +
