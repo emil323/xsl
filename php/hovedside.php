@@ -26,7 +26,8 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 include("html/header.html");
 ?>
 
-    <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..." onkeyup="søk(this.value)"></div>
+    <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..." onkeyup="søk(this.value)">
+    </div>
 
     <div class="fjelloverganger">
         <ul class="vei-liste">
@@ -45,17 +46,23 @@ include("html/header.html");
                 <li id="<?php echo $vei_id ?>" class="vei">
                     <ul class="fjellovergang">
 
-                        <li class="vei-listeelement" id="veinavn"><h2  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2></li>
+                        <li class="vei-listeelement" id="veinavn"><h2
+                                    onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2>
+                        </li>
                         <div class="fjellovergang-innhold">
+
+                            <li class="vei-listeelement"><h3>Kjøreforhold:</h3></li>
+                            <li><?php echo $fjellovergang->veiforhold ?></li>
                             <li class="vei-listeelement">
                                 <small>Sist
                                     oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
                             </li>
-                            <li class="vei-listeelement"><strong>Kjøreforhold</strong>:
-                                <br><?php echo $fjellovergang->veiforhold ?></li>
+
+                            <!--
                             <li class="vei-listeelement">
                                 <strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?>
                             </li>
+                            -->
                         </div>
                     </ul>
                 </li>
@@ -66,6 +73,6 @@ include("html/header.html");
             ?>
         </ul>
     </div>
-<?php  ?><?php
+<?php ?><?php
 // Inkluder footer
 include("html/footer.html");

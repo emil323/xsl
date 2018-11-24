@@ -2,12 +2,20 @@ html,body{
     height: 100%;
 }
 
+
 body {
     background-color: #dadada;
     font-family: Arial;
     margin:0;
     padding: 0;
     color: #FFF;
+
+    background-image: url("../img/index-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
 }
 
 nav {
@@ -18,10 +26,21 @@ nav {
     position: absolute;
 }
 
+#innhold {
+    background: rgba(50,50,50,0.4);
+}
+
 .nav-liste {
     list-style-type: none;
     text-align: center;
 }
+
+/*
+.nav-listeelement {
+    display: inline-block;
+}
+*/
+
 
 #søkFelt {
     text-align: center;
@@ -52,7 +71,6 @@ footer {
     position: absolute;
     width: 100%;
     text-align: center;
-    margin-top: 3em;
 }
 
 a {
@@ -110,12 +128,11 @@ a {
 .tabellKategori {
     font-size: small;
     background-color: #008ec2;
-
 }
 
 .tabellData {
-
 }
+
 .skjulKnapp {
     background-color: orange; /* Green */
     border: none;
@@ -149,7 +166,6 @@ a {
 }
 
 article {
-    padding: 10px;
     margin: auto;
     width: 700px;
     background-color: #444f55;
