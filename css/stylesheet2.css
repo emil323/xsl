@@ -1,97 +1,68 @@
-body {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-    height: 100%;
-
-    font-family: Arial;
+* {
     margin: 0;
     padding: 0;
-    color: #FFF;
+}
 
+body {
+    height: 100%;
+
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     background-image: url("../img/index-background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 
+    font-family: Arial;
+    color: #FFF;
 }
 
-nav {
+/* HEADER */
+header {
     background-color: #444f55;
     color: #FFF;
     top: 0;
     width: 100%;
-    position: absolute;
-}
-
-#innhold {
-    background: rgba(50, 50, 50, 0.4);
+    position: static;
 }
 
 .nav-liste {
     list-style-type: none;
     text-align: center;
+    padding: 1em;
 }
+/* SLUTT PÅ HEADER */
 
-/*
-.nav-listeelement {
-    display: inline-block;
-}
-*/
-
+/* INNHOLD */
+/* SØKEFELT */
 #søkFelt {
     text-align: center;
 }
 
 #søk {
-    margin-top: 3.5em;
     padding: 1em;
     font-size: 1.5em;
+    margin-bottom: 1em;
 }
+/* SLUTT PÅ SØKEFELT */
 
-.fjelloverganger {
-    margin-top: 3em;
-    margin: auto;
+/* LISTE OVER FJELLOVERGANGER */
+article {
+    min-height: 500px;
     width: 700px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.vei-liste {
-
+#forsideInnhold {
 }
 
-.vei {
-}
-
-footer {
-    background-color: #444f55;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-}
-
-a {
-    color: #FFF;
-}
-
-.footer-liste {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.footer-delliste {
-    display: inline-block;
-}
-
-.footer-listeelement {
-    margin: 10px;
-}
-
-.footer-img {
-    height: 50px;
-}
 
 .vei-liste {
     list-style-type: none;
 }
+
 
 .vei {
     margin: 10px;
@@ -106,13 +77,19 @@ a {
     color: #ed9300;
 }
 
+.fjelloverganger {
+}
+
 .fjellovergang {
     list-style-type: none;
     padding: 1em;
 }
 
+.fjellovergang-innhold {
+    padding-top: 1em;
+}
+
 .værTabell {
-    margin: 1em;
     padding: 1em;
 }
 
@@ -159,8 +136,40 @@ a {
     background-color: aliceblue;
 }
 
+/* OM-SIDEN */
 #om {
-    margin: auto;
-    width: 700px;
     background-color: #444f55;
+    padding: 1em;
 }
+/* SLUTT PÅ INNHOLD */
+
+/* FOOTER */
+footer {
+    width: 100%;
+    padding-top: 1em;
+    background-color: #444f55;
+    position: absolute;
+    text-align: center;
+}
+
+a {
+    color: #FFF;
+}
+
+.footer-liste {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-delliste {
+    display: inline-block;
+}
+
+.footer-listeelement {
+    margin: 10px;
+}
+
+.footer-img {
+    height: 50px;
+}
+/* SLUTT PÅ FOOTER */
