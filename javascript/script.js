@@ -20,7 +20,7 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
         }
     };
 
-    var url = encodeURI("php/værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn)
+    var url = "php/værdata.php?fylke=" + fylke + "&kommune=" + kommune + "&stedsnavn=" + stedsnavn
     console.log(url)
     xhttp.open("GET", url, true);
     xhttp.send();
@@ -29,8 +29,10 @@ function lastVærdata(vei_id,fylke,kommune,stedsnavn) {
 function skrivVærmelding(vei_id,xml) {
     if (xml.readyState == 4 && xml.status == 200) {
 
-        console.log(xml.responseXML)
         var xmlDoc = xml.responseXML
+
+        console.log(xml.responseText)
+
 
         if(værModus.veiID != vei_id) {
             værModus.veiID = vei_id

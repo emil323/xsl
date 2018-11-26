@@ -12,6 +12,6 @@ header('Content-Type: text/xml');
 $xslt = new XSLTProcessor();
 $doc = new DOMDocument();
 
-$doc->load("xsl/vegmeldinger_med_stedsdata.xsl");
+$doc->load("../xsl/vegmeldinger_med_stedsdata.xsl");
 $xslt->importStylesheet($doc);
 echo $xslt->transformToXML($doc);

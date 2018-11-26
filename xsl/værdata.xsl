@@ -1,13 +1,18 @@
 <xsl:stylesheet version="1.0" xml:lang="no" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output method="xml" indent="yes"/>
+    <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
     <xsl:param name="fylke"/>
     <xsl:param name="kommune"/>
     <xsl:param name="stedsnavn"/>
 
+
+    <xsl:param name="yrURL"/>
+
+<!--
     <xsl:param name="yrURL"
                select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
+ -->
     <xsl:variable name="værmelding" select="document($yrURL)/weatherdata"/>
 
     <xsl:template match="/">

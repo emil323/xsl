@@ -22,6 +22,7 @@ $transformertXSL = $xsltProcessor->transformToXml($xslDoc);
 // Lager et SimpleXMLElement ut av det transformerte XML dokumentet
 $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 
+
 //Inkluder header
 include("html/header.html");
 ?>
@@ -44,7 +45,6 @@ include("html/header.html");
                 ?>
                 <li id="<?php echo $vei_id ?>" class="vei">
                     <ul class="fjellovergang">
-
                         <li class="vei-listeelement" id="veinavn"><h2  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2></li>
                         <div class="fjellovergang-innhold">
                             <li class="vei-listeelement">

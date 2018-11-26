@@ -9,13 +9,19 @@
     <!-- Legger vegmeldinger-fila i en variabel -->
 
     <!-- Henter en oppdatert XML-fil fra Vegvesen.no -->
-    <!-- <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/> -->
+    <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/>
+
+    <!-- Henter xml fil ignorerte veier-->
+    <xsl:param name="ignorertFil" select="document('../xml/ignorerte.xml')"/>
 
     <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert -->
-    <xsl:param name="vegmeldingerFil" select="document('../xml/veidata.xml')"/>
+    <!-- <xsl:param name="vegmeldingerFil" select="document('php/vegmelding_med_stedsdata.php')"/> -->
 
-    <!-- Lager et variabel for result-array -->
+    <!-- Lager et variabel for result-array til vegvesen XMLen-->
     <xsl:variable name="vegmeldinger" select="$vegmeldingerFil/searchresult/result-array/result"/>
+
+    <!-- Hent ut XML fil  -->
+    <xsl:variable name="ignorerte-veier" select="$ignorertFil/ignorerte-veier"/>
 
     <xsl:template match="/">
         <!-- definer rot -->
@@ -38,11 +44,16 @@
 
                         <!-- Finner vi stednavn data? -->
                         <xsl:if test="$stedsdata/stedsnavn">
+                            <xsl:variable name="navn" select="concat(roadType, ' ',roadNumber, ' ',heading)"/>
+
+                            <!-- sjekk om veien IKKE finnes i ignorte veier -->
+                            <xsl:if test="boolean($ignorerte-veier/vei = $navn) = 0">
+
                             <!-- Opprett fjellovergang objekt -->
                             <fjellovergang>
                                 <!-- Opprett et attriutt for navn på veiforbindelse -->
                                 <xsl:attribute name="navn">
-                                    <xsl:value-of select="concat(roadType, ' ',roadNumber, ' ',heading)"/>
+                                    <xsl:value-of select="$navn"/>
                                 </xsl:attribute>
                                 <!-- Hent ut kjøreforhold -->
                                 <veiforhold>
@@ -72,12 +83,21 @@
                                     <stedsnavn>
                                         <xsl:value-of select="$stedsnavn"/>
                                     </stedsnavn>
+                                    <koordinater>
+                                        <xsl:attribute name="breddegrad">
+                                            <xsl:value-of select="coordinates/startPoint/xCoord"/>
+                                        </xsl:attribute>
+                                        <xsl:attribute name="lengdegrad">
+                                            <xsl:value-of select="coordinates/startPoint/yCoord"/>
+                                        </xsl:attribute>
+                                    </koordinater>
                                 </stedsdata>
                                 <yrURL>
                                     <xsl:value-of
                                             select="concat('http://www.yr.no/sted/Norge/',$fylke,'/',$kommune,'/',$stedsnavn,'/varsel.xml')"/>
                                 </yrURL>
                             </fjellovergang>
+                            </xsl:if>
                         </xsl:if>
                     </xsl:if>
                 </xsl:for-each>
