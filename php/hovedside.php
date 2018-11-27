@@ -26,46 +26,92 @@ $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
 //Inkluder header
 include("html/header.html");
 ?>
+    <article>
+        <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..."
+                                 onkeyup="søk(this.value)"></div>
 
-    <div id="søkFelt"><input type="text" id="søk" placeholder="Søk etter fjellovergang..." onkeyup="søk(this.value)"></div>
-
-    <div class="fjelloverganger">
-        <ul class="vei-liste">
-            <?php
-
-            $teller = 0;
-            foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
-
-                $vei_id = "vei-" . $teller;
-
-                $fylke = $fjellovergang->stedsdata->fylke;
-                $kommune = $fjellovergang->stedsdata->kommune;
-                $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
-
-                ?>
-                <li id="<?php echo $vei_id ?>" class="vei">
-                    <ul class="fjellovergang">
-                        <li class="vei-listeelement" id="veinavn"><h2  onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2></li>
-                        <div class="fjellovergang-innhold">
-                            <li class="vei-listeelement">
-                                <small>Sist
-                                    oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
-                            </li>
-                            <li class="vei-listeelement"><strong>Kjøreforhold</strong>:
-                                <br><?php echo $fjellovergang->veiforhold ?></li>
-                            <li class="vei-listeelement">
-                                <strong>Hastverk</strong>: <?php echo $fjellovergang->hastverk ?>
-                            </li>
-                        </div>
-                    </ul>
-                </li>
-
+        <div class="fjelloverganger">
+            <ul class="vei-liste">
                 <?php
-                $teller++;
-            }
-            ?>
-        </ul>
-    </div>
-<?php  ?><?php
+
+                $teller = 0;
+                foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
+
+                    $vei_id = "vei-" . $teller;
+
+                    $fylke = $fjellovergang->stedsdata->fylke;
+                    $kommune = $fjellovergang->stedsdata->kommune;
+                    $stedsnavn = $fjellovergang->stedsdata->stedsnavn;
+
+                    $farenivå = $fjellovergang->hastverk;
+
+                    ?>
+                    <li id="<?php echo $vei_id ?>" class="vei">
+                        <ul class="fjellovergang">
+                            <li class="vei-listeelement" id="veinavn"><h2
+                                        onclick="lastVærdata(<?php echo "'$vei_id','$fylke','$kommune','$stedsnavn'" ?>)"><?php echo $fjellovergang['navn']; ?></h2>
+                            </li>
+                            <div class="fjellovergang-innhold">
+                                <li class="vei-listeelement">
+                                    <small>Sist
+                                        oppdatert: <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?></small>
+                                </li>
+                                <li class="vei-listeelement">
+                                    <strong>Kjøreforhold</strong>: <?php
+                                    switch ($farenivå) {
+                                        case "N":
+                                            echo "Normale kjøreforhold";
+                                            break;
+                                        case "U":
+                                            echo "Mindre gode kjøreforhold";
+                                            break;
+                                        case "X":
+                                            echo "Ekstremt dårlige kjøreforhold";
+                                            break;
+                                    }
+
+                                    ?>
+                                </li>
+                                <br>
+                                <li class="vei-listeelement">
+                                    <strong>Beskrivelse</strong>: <?php echo $fjellovergang->veiforhold; ?>
+                                </li>
+                                <li class="vei-listeelement">  <?php
+
+                                    if($farenivå == "N") {
+
+                                    }
+
+                                    if($farenivå == "U") {
+
+                                    }
+
+                                    if($farenivå == "X") {
+                                        echo "<img src='./img/stopp.png' height='50px'/>";
+                                    }
+
+                                    if (strpos(strtolower($fjellovergang->veiforhold), 'glatt') !== false) {
+                                        echo "<img src='./img/glattvei.png' height='50px'/>";
+                                    }
+
+                                    if (strpos(strtolower($fjellovergang->veiforhold), 'våt') !== false) {
+                                        echo "<img src='./img/regn.png' height='50px'/>";
+                                    }
+
+                                    ?></li>
+                                <br>
+                                <li class="vei-listeelement"><h3>Værvarsel</h3></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <?php
+                    $teller++;
+                }
+                ?>
+            </ul>
+        </div>
+    </article>
+<?php ?><?php
 // Inkluder footer
 include("html/footer.html");

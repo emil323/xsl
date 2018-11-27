@@ -6,7 +6,7 @@
 body {
     height: 100%;
 
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     background-image: url("../img/index-background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ header {
 #søk {
     padding: 1em;
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 /* SLUTT PÅ SØKEFELT */
 
@@ -87,6 +87,24 @@ article {
 
 .fjellovergang-innhold {
     padding-top: 1em;
+}
+
+.farenivåN {
+    height: 50px;
+    width: 50px;
+    background-color: #04ed08;
+}
+
+.farenivåU {
+    height: 50px;
+    width: 50px;
+    background-color: #edd104;
+}
+
+.farenivåX {
+    height: 50px;
+    width: 50px;
+    background-color: #ed0404;
 }
 
 .værTabell {
