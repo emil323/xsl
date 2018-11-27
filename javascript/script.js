@@ -58,7 +58,9 @@ function skrivVærmelding(vei_id,xml) {
         });
 
 
-        var html = "<table class='værTabell'>";
+        var html = "<div class='værvarsel'>" +
+            "<h3 class='værOverskrift'>Værvarsel</h3>" +
+            "<table class='værTabell'>";
 
         for(i = 0; i< timevarsel.length; i++) {
             //Værdata variabler
@@ -78,7 +80,7 @@ function skrivVærmelding(vei_id,xml) {
             if(fra.getDay() !== forrigeDag) {
                 html +=
                     "<tr>" +
-                    "<th class='tabellOverskrift'>" + fra.toLocaleString('no-NO', dag) + "</th>" +
+                    "<th class='tabellOverskrift' colspan='6'>" + fra.toLocaleString('no-NO', dag) + "</th>" +
                     "<tr>" +
                     "<th class='tabellKategori'>Tid</th>" +
                     "<th class='tabellKategori' colspan='2'>Varsel</th>" +
@@ -110,7 +112,8 @@ function skrivVærmelding(vei_id,xml) {
 
         html+= "<tr><td><button class='skjulKnapp' onclick='skjulInfo()'>Skjul</button></td></tr>";
 
-        html += "</table>";
+        html += "</div>" +
+            "</table>";
         vei_element.insertAdjacentHTML('beforeend', html)
     } else {
         console.log("Kunne ikke laste værdata");
@@ -128,9 +131,7 @@ function visLangtidsvarsel() {
 }
 
 function skjulInfo() {
-
-
-    var elements = document.getElementsByClassName("værTabell");
+    var elements = document.getElementsByClassName("værvarsel");
     while(elements.length > 0){
         elements[0].parentNode.removeChild(elements[0]);
     }
@@ -155,7 +156,6 @@ function søk(filter) {
             task.style.display = 'none';
         }
     })
-
 }
 
 

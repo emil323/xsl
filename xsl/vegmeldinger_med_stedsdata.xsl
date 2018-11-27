@@ -15,7 +15,7 @@
     <xsl:param name="ignorertFil" select="document('../xml/ignorerte.xml')"/>
 
     <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert -->
-    <!-- <xsl:param name="vegmeldingerFil" select="document('php/vegmelding_med_stedsdata.php')"/> -->
+    <!-- <xsl:param name="vegmeldingerFil" select="document('../xml/veidataLokalKopi.xml')"/> -->
 
     <!-- Lager et variabel for result-array til vegvesen XMLen-->
     <xsl:variable name="vegmeldinger" select="$vegmeldingerFil/searchresult/result-array/result"/>

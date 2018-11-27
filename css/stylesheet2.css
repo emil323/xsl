@@ -5,16 +5,18 @@
 
 body {
     height: 100%;
-
+    /*
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     background-image: url("../img/index-background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    */
+    background-color: #dadada;
 
-    font-family: Arial;
-    color: #FFF;
+    font-family: "Lucida Sans Unicode";
+    color: #444f55;
 }
 
 /* HEADER */
@@ -31,28 +33,42 @@ header {
     text-align: center;
     padding: 1em;
 }
+
+.nav-listeelement {
+    display: inline-block;
+
+}
 /* SLUTT PÅ HEADER */
 
 /* INNHOLD */
 /* SØKEFELT */
 #søkFelt {
     text-align: center;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/headerBilde.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
 #søk {
+    text-align: center;
     padding: 1em;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
+    margin-top: 100px;
+    border: none;
 }
 /* SLUTT PÅ SØKEFELT */
 
 /* LISTE OVER FJELLOVERGANGER */
 article {
-    min-height: 500px;
-    width: 700px;
+    min-height: 300px;
+    width: 600px;
     margin: auto;
-    margin-top: 1em;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 #forsideInnhold {
@@ -63,21 +79,38 @@ article {
     list-style-type: none;
 }
 
-
 .vei {
-    margin: 10px;
-    background-color: #444f55;
+    padding: 1em;
+    background-color: #FFF;
+    margin-bottom: 1px;
 }
 
 .vei:hover {
+}
+
+.værOverskrift {
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
+}
+
+#veinavn {
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
     cursor: pointer;
 }
 
 #veinavn:hover {
     color: #ed9300;
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
+}
+
+#sistOppdatert {
+    background-color: #ed9300;
 }
 
 .fjelloverganger {
+    background-color: #444f55;
 }
 
 .fjellovergang {
@@ -89,34 +122,22 @@ article {
     padding-top: 1em;
 }
 
-.farenivåN {
-    height: 50px;
-    width: 50px;
-    background-color: #04ed08;
-}
-
-.farenivåU {
-    height: 50px;
-    width: 50px;
-    background-color: #edd104;
-}
-
-.farenivåX {
-    height: 50px;
-    width: 50px;
-    background-color: #ed0404;
-}
-
-.værTabell {
+.værvarsel {
     padding: 1em;
 }
 
+.værTabell {
+}
+
 .tabellOverskrift {
+    background-color:  #444f55;
+    color: #FFF;
 }
 
 .tabellKategori {
     font-size: small;
     background-color: #008ec2;
+    color: #FFF;
 }
 
 .tabellData {
@@ -134,7 +155,7 @@ article {
 }
 
 .visLangtidsVarselKnapp {
-    background-color: lightblue; /* Green */
+    background-color: #58b02c; /* Green */
     border: none;
     color: black;
     padding: 15px 32px;
@@ -145,18 +166,18 @@ article {
 }
 
 .visLangtidsVarselKnapp:hover {
-    color: black;
-    background-color: aliceblue;
+    color: #FFF;
+    background-color: #444f55;
 }
 
 .skjulKnapp:hover {
-    color: black;
-    background-color: aliceblue;
+    color: #FFF;
+    background-color: #444f55;
 }
 
 /* OM-SIDEN */
 #om {
-    background-color: #444f55;
+    background-color: #FFFFFF;
     padding: 1em;
 }
 /* SLUTT PÅ INNHOLD */
@@ -185,6 +206,7 @@ a {
 
 .footer-listeelement {
     margin: 10px;
+    color: #FFF;
 }
 
 .footer-img {
