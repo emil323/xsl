@@ -59,7 +59,7 @@ function skrivVærmelding(vei_id,xml) {
 
 
         var html = "<div class='værvarsel'>" +
-            "<h3 class='værOverskrift'>Værvarsel</h3>" +
+            "<h3>Værvarsel</h3>" +
             "<table class='værTabell'>";
 
         for(i = 0; i< timevarsel.length; i++) {

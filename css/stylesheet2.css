@@ -89,7 +89,7 @@ article {
 .vei:hover {
 }
 
-.værOverskrift {
+h1 {
     text-decoration: underline;
     text-decoration-color: #ed9300;
 }
@@ -121,6 +121,10 @@ article {
 
 .fjellovergang-innhold {
     padding-top: 1em;
+}
+
+.varselElement {
+    display: inline-block;
 }
 
 .værvarsel {
