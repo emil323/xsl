@@ -56,7 +56,8 @@ include("html/header.html");
                             </li>
                             <div class="fjellovergang-innhold">
                                 <li class="vei-listeelement" id="sistOppdatert">
-                                    <small><strong>Gydlig fra:</strong> <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?>
+                                    <small><strong>Gydlig
+                                            fra:</strong> <?php echo strftime("%a %d. %b %Y, kl. %H:%M", strtotime($fjellovergang->gyldigFra)); ?>
                                     </small>
                                 </li>
                                 <li class="vei-listeelement"><strong>Kjøreforhold: </strong> <?php
@@ -77,37 +78,38 @@ include("html/header.html");
 
                                     ?>
                                 </li>
-                                <li class="vei-listeelement"><strong>Beskrivelse: </strong><?php echo $fjellovergang->veiforhold; ?></li>
+                                <li class="vei-listeelement">
+                                    <strong>Beskrivelse: </strong><?php echo $fjellovergang->veiforhold; ?></li>
 
                                 <li class="vei-listeelement"><strong>Varsler:</strong></li>
                                 <li>
                                     <ul>
-                                    <?php
+                                        <?php
 
-                                    if (strpos(strtolower($fjellovergang->veiforhold), 'glatt') !== false) {
-                                        $obs = true;
-                                        echo "<li class='varselElement'><img src='./img/glatt.png' height='50px' alt='Glatt vei'/></li>";
-                                    }
+                                        if (strpos(strtolower($fjellovergang->veiforhold), 'glatt') !== false) {
+                                            $obs = true;
+                                            echo "<li class='varselElement'><img src='./img/glatt.png' height='50px' alt='Glatt vei'/></li>";
+                                        }
 
-                                    if (strpos(strtolower($fjellovergang->veiforhold), 'skred') !== false) {
-                                        $obs = true;
-                                        echo "<li class='varselElement'><img src='./img/skred.png' height='50px' alt='Skredfare'/></li>";
-                                    }
+                                        if (strpos(strtolower($fjellovergang->veiforhold), 'skred') !== false) {
+                                            $obs = true;
+                                            echo "<li class='varselElement'><img src='./img/skred.png' height='50px' alt='Skredfare'/></li>";
+                                        }
 
-                                    if (strpos(strtolower($fjellovergang->veiforhold), 'vegarbeid') !== false) {
-                                        $obs = true;
-                                        echo "<li class='varselElement'><img src='./img/vegarbeid.png' height='50px' alt='Vegarbeid'/></li>";
-                                    }
+                                        if (strpos(strtolower($fjellovergang->veiforhold), 'vegarbeid') !== false) {
+                                            $obs = true;
+                                            echo "<li class='varselElement'><img src='./img/vegarbeid.png' height='50px' alt='Vegarbeid'/></li>";
+                                        }
 
-                                    if ((strpos(strtolower($fjellovergang->veiforhold), 'vegarbeid') !== false) || ($farenivå == "X")) {
-                                        $obs = true;
-                                        echo "<li class='varselElement'><img src='./img/varsel.png' height='50px' alt='Varselskilt. Dårlige kjøreforhold'/></li>";
-                                    }
+                                        if ((strpos(strtolower($fjellovergang->veiforhold), 'vegarbeid') !== false) || ($farenivå == "X")) {
+                                            $obs = true;
+                                            echo "<li class='varselElement'><img src='./img/varsel.png' height='50px' alt='Varselskilt. Dårlige kjøreforhold'/></li>";
+                                        }
 
-                                    if($obs != true) {
-                                        echo "<li class='varselElement'>Ingen varseler</li>";
-                                    }
-                                    ?>
+                                        if ($obs != true) {
+                                            echo "<li class='varselElement'>Ingen varseler</li>";
+                                        }
+                                        ?>
                                     </ul>
                                 </li>
                             </div>
