@@ -91,9 +91,9 @@ include("html/header.html");
                                             echo "<li class='varselElement'><img src='./img/glatt.png' height='50px' alt='Glatt vei'/></li>";
                                         }
 
-                                        if (strpos(strtolower($fjellovergang->veiforhold), 'skred') !== false) {
+                                        if (strpos(strtolower($fjellovergang->veiforhold), 'ras') !== false) {
                                             $obs = true;
-                                            echo "<li class='varselElement'><img src='./img/skred.png' height='50px' alt='Skredfare'/></li>";
+                                            echo "<li class='varselElement'><img src='./img/ras.png' height='50px' alt='Rasfare'/></li>";
                                         }
 
                                         if (strpos(strtolower($fjellovergang->veiforhold), 'vegarbeid') !== false) {
