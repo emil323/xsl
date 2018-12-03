@@ -33,7 +33,7 @@ include("html/header.html");
             <ul class="vei-liste">
                 <?php
 
-                // Går igjennom
+                // Går igjennom alle fjelloverganene
                 $teller = 0;
                 foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
 
@@ -60,6 +60,8 @@ include("html/header.html");
                                     </small>
                                 </li>
                                 <li class="vei-listeelement"><strong>Kjøreforhold: </strong> <?php
+
+                                    // Gir overordnede kjøreforhold basert på Urgency-nivået
                                     switch ($farenivå) {
                                         case "N":
                                             echo "Normalt, trygt for ferdsel";
@@ -85,6 +87,7 @@ include("html/header.html");
                                     <ul>
                                         <?php
 
+                                        // Finner stikkord i kjøreforholdene viser tilsvarende skilt
                                         if (strpos(strtolower($fjellovergang->veiforhold), 'glatt') !== false) {
                                             $obs = true;
                                             echo "<li class='varselElement'><img src='./img/glatt.png' height='50px' alt='Glatt vei'/></li>";
