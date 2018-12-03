@@ -1,70 +1,198 @@
-body {
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-    height: 100%;
-
-    font-family: Arial;
+* {
     margin: 0;
     padding: 0;
-    color: #FFF;
+    overflow-x: hidden;
+}
 
+body {
+    height: 100%;
+    /*
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
     background-image: url("../img/index-background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    */
+    background-color: #dadada;
 
+    font-family: "Lucida Sans Unicode";
+    color: #444f55;
 }
 
-nav {
+/* HEADER */
+header {
     background-color: #444f55;
     color: #FFF;
     top: 0;
     width: 100%;
-    position: absolute;
-}
-
-#innhold {
-    background: rgba(50, 50, 50, 0.4);
+    position: static;
 }
 
 .nav-liste {
     list-style-type: none;
     text-align: center;
+    padding: 1em;
 }
 
-/*
 .nav-listeelement {
     display: inline-block;
-}
-*/
 
+}
+/* SLUTT PÅ HEADER */
+
+/* INNHOLD */
+/* SØKEFELT */
 #søkFelt {
     text-align: center;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/headerBilde.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
 #søk {
-    margin-top: 3.5em;
+    text-align: center;
     padding: 1em;
     font-size: 1.5em;
+    margin-top: 100px;
+    border: none;
+}
+/* SLUTT PÅ SØKEFELT */
+
+/* LISTE OVER FJELLOVERGANGER */
+article {
+    min-height: 300px;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
-.fjelloverganger {
-    margin-top: 3em;
-    margin: auto;
-    width: 700px;
+#forsideInnhold {
 }
+
 
 .vei-liste {
-
+    list-style-type: none;
 }
 
 .vei {
+    padding: 1em;
+    background-color: #FFF;
+    margin-bottom: 1px;
 }
 
+.vei:hover {
+}
+
+h1 {
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
+}
+
+#veinavn {
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
+    cursor: pointer;
+}
+
+#veinavn:hover {
+    color: #ed9300;
+    text-decoration: underline;
+    text-decoration-color: #ed9300;
+}
+
+#sistOppdatert {
+    background-color: #ed9300;
+}
+
+.fjelloverganger {
+    background-color: #444f55;
+}
+
+.fjellovergang {
+    list-style-type: none;
+    padding: 1em;
+}
+
+.fjellovergang-innhold {
+    padding-top: 1em;
+}
+
+.varselElement {
+    display: inline-block;
+}
+
+.værvarsel {
+    padding: 1em;
+}
+
+.værTabell {
+}
+
+.tabellOverskrift {
+    background-color:  #444f55;
+    color: #FFF;
+}
+
+.tabellKategori {
+    font-size: small;
+    background-color: #008ec2;
+    color: #FFF;
+}
+
+.tabellData {
+}
+
+.skjulKnapp {
+    background-color: orange; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.visLangtidsVarselKnapp {
+    background-color: #58b02c; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.visLangtidsVarselKnapp:hover {
+    color: #FFF;
+    background-color: #444f55;
+}
+
+.skjulKnapp:hover {
+    color: #FFF;
+    background-color: #444f55;
+}
+
+/* OM-SIDEN */
+#om {
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+/* SLUTT PÅ INNHOLD */
+
+/* FOOTER */
 footer {
+    width: 100%;
+    padding-top: 1em;
     background-color: #444f55;
     position: absolute;
-    width: 100%;
     text-align: center;
 }
 
@@ -83,84 +211,10 @@ a {
 
 .footer-listeelement {
     margin: 10px;
+    color: #FFF;
 }
 
 .footer-img {
     height: 50px;
 }
-
-.vei-liste {
-    list-style-type: none;
-}
-
-.vei {
-    margin: 10px;
-    background-color: #444f55;
-}
-
-.vei:hover {
-    cursor: pointer;
-}
-
-#veinavn:hover {
-    color: #ed9300;
-}
-
-.fjellovergang {
-    list-style-type: none;
-    padding: 1em;
-}
-
-.værTabell {
-    margin: 1em;
-    padding: 1em;
-}
-
-.tabellOverskrift {
-}
-
-.tabellKategori {
-    font-size: small;
-    background-color: #008ec2;
-}
-
-.tabellData {
-}
-
-.skjulKnapp {
-    background-color: orange; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.visLangtidsVarselKnapp {
-    background-color: lightblue; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-.visLangtidsVarselKnapp:hover {
-    color: black;
-    background-color: aliceblue;
-}
-
-.skjulKnapp:hover {
-    color: black;
-    background-color: aliceblue;
-}
-
-#om {
-    margin: auto;
-    width: 700px;
-    background-color: #444f55;
-}
+/* SLUTT PÅ FOOTER */

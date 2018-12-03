@@ -16,25 +16,24 @@ $xsltProcessor = new XSLTProcessor();
 $xsltProcessor->registerPHPFunctions();
 $xsltProcessor->importStylesheet($xslDoc);
 
-// Skriver ut det transformerte dokumentet
+// Legger det transformerte dokumentet i en variabel
 $transformertXSL = $xsltProcessor->transformToXml($xslDoc);
 
 // Lager et SimpleXMLElement ut av det transformerte XML dokumentet
 $statusFjelloverganger = new SimpleXMLElement($transformertXSL);
-
 
 //Inkluder header
 include("html/header.html");
 ?>
     <div id="søkFelt"><input autofocus type="text" id="søk" placeholder="Søk etter fjellovergang..."
                              onkeyup="søk(this.value)"></div>
+
     <article>
-
-
         <div class="fjelloverganger">
             <ul class="vei-liste">
                 <?php
 
+                // Går igjennom
                 $teller = 0;
                 foreach ($statusFjelloverganger->fjellovergang as $fjellovergang) {
 
