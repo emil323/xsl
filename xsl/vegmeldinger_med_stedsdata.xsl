@@ -8,10 +8,14 @@
 
     <!-- Legger vegmeldinger-fila i en variabel -->
 
+    <!-- VIKTIG: Vi har lastet opp en lokal kopi av vegvesen API'et, dersom APIet skulle svikte.
+     -->
     <!-- Henter en oppdatert XML-fil fra Vegvesen.no -->
     <xsl:param name="vegmeldingerFil" select="document('https://www.vegvesen.no/trafikk/xml/savedsearch.xml?id=604')"/>
 
-    <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert, men kan brukes om den fra Statens Vegvesen ikke kan lastes inn -->
+    <!-- Bruker en lokal kopi av XML-filen. Denne er ikke oppdatert, men kan brukes om den fra Statens Vegvesen ikke kan lastes inn
+        KOMMENTER UT DENNE DERSOM NETTISDEN IKKE LASTER
+    -->
     <!-- <xsl:param name="vegmeldingerFil" select="document('../xml/veidataLokalKopi.xml')"/> -->
 
     <!-- Henter xml fil ignorerte veier-->

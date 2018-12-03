@@ -1,3 +1,8 @@
+/***
+ * Inneholder nåværende status
+ * @type {{xml: null, veiID: number, visAlt: boolean}}
+ */
+
 var værModus = {
     xml: null,
     veiID: -1,
@@ -10,6 +15,17 @@ function vedInnlasting() {
     skjulInfo()
 }
 
+
+/**
+ *  Denne funksjonen henter ut YR-data ved hjel av AJAX,
+ *  hjelper med å formatere URL'en, samt videre
+ * @param vei_id
+ * @param fylke
+ * @param kommune
+ * @param stedsnavn
+ * @param kun_kommune
+ */
+
 function lastVærdata(vei_id, fylke, kommune, stedsnavn, kun_kommune) {
     console.log(vei_id, fylke, kommune, stedsnavn)
 
@@ -17,7 +33,6 @@ function lastVærdata(vei_id, fylke, kommune, stedsnavn, kun_kommune) {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             //Sjekk om værvarsel ble funnet
-
             if (this.responseXML == null) {
                 console.log("Fant ikke værvarsel for " + stedsnavn + ", prøver å bruke kommune som stedsnavn.")
                 //Dersom ikke, prøv på ny, men kun bruk kommune i værvarsel
@@ -42,6 +57,14 @@ function lastVærdata(vei_id, fylke, kommune, stedsnavn, kun_kommune) {
     xhttp.open("GET", url, true);
     xhttp.send();
 }
+
+/***
+ *
+ * Tar innholdet fra lastVærdata(), og generer HTML
+ *
+ * @param vei_id
+ * @param xml
+ */
 
 function skrivVærmelding(vei_id, xml) {
     if (xml.readyState == 4 && xml.status == 200) {
@@ -152,6 +175,12 @@ function skjulInfo() {
         road.style.display = 'none';
     });
 }
+
+
+/**
+ * Søk funksjonen blir kjørt hver gang man skriver i søke-feltet.
+ * @param filter
+ */
 
 function søk(filter) {
     skjulInfo()
